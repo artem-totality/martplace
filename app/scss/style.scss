@@ -243,3 +243,35 @@
 }
 
 // end promo
+// start offer
+
+.offer__inner {
+    padding-top: 186px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer__item {
+    max-width: 360px;
+    text-align: center;
+    padding: 40px 34px;
+    &-img {
+        margin-bottom: 35px;
+    }
+    &-title {
+        font-size: 24px;
+        color: #010101;
+        margin-bottom: 25px;
+    }
+    &-description {
+        line-height: 30px;
+    }
+    &--shadow {
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+}
+
+
+
+// end offer

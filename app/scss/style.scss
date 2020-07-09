@@ -5,7 +5,112 @@
 
 // start header
 
+.header__top {
+    background-color: $dark-bg;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    &-logo {
+        padding-left: 7px;
+    }
+    &-box {
+        display: flex;
+        align-items: center;
+    }
+    &-btn {
+        padding: 12px 18px;
+        background-color: $button-blue;
+        border-radius: 21px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        color: #fff;
+        margin-right: 50px;
+    }
+    &-icons a {
+        margin-right: 33px;
+        font-family: $icon-font;
+        font-size: 20px;
+    }
+}
 
+.header__account {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    &-avatar {
+        width: 50px;
+        height: 50px;
+        background-color: #7c7979;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 23px;
+    }
+    &-name {
+        font-size: 16px;
+    }
+    &-balance {
+        font-size: 15px;
+        color: $button-blue;
+    }
+}
 
+.header__bottom {
+    &-inner {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-form {
+        position: relative;
+    }
+    &-form input {
+        height: 46px;
+        width: 360px;
+        border-radius: 23px;
+        border: 1px solid #d9dfe5;
+        outline: none;
+        padding-left: 25px;
+        padding-right: 95px;
+        font-family: $main-font;
+        font-size: 15px;
+        font-weight: 400;
+        &::placeholder {
+            font-family: $main-font;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+    &-form button {
+        background-color: $button-blue;
+        border: none;
+        height: 46px;
+        width: 70px;
+        border-radius: 23px;
+        font-family: $icon-font;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        outline: none;
+        cursor: pointer;
+    }
+}
 
+.menu__list {
+    li {
+        display: inline-block;
+        & + li {
+            margin-left: 33px;
+        }
+    }
+    a {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+  
 // end header

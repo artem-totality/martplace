@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $font-color3;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 16px;
+    color: $font-color5;
+}
+
+.container  {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

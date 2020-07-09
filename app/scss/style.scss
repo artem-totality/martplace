@@ -222,6 +222,7 @@
             right: 0;
             border-radius: 0 6px 6px 0;
             border: 1px solid #dcdcdc;
+            padding-left: 20px;
         }
         button {
             height: 55px;
@@ -245,9 +246,12 @@
 // end promo
 // start offer
 
-.offer__inner {
+.offer {
     padding-top: 186px;
     padding-bottom: 120px;
+}
+
+.offer__inner {
     display: flex;
     justify-content: space-between;
 }
@@ -262,7 +266,7 @@
     &-title {
         font-size: 24px;
         color: #010101;
-        margin-bottom: 25px;
+        margin-bottom: 25pgulpx;
     }
     &-description {
         line-height: 30px;
@@ -272,6 +276,166 @@
     }
 }
 
-
-
 // end offer
+//start week product
+
+.week-product {
+    padding: 120px 0;
+    background-color: $dark-bg;
+    &__slider {
+        button {
+            border: none;
+            font-family: $icon-font;
+            font-size: 14px;
+            background-color: #7347c1;
+            color: #fff;
+            padding: 15px 0;
+            outline: none;
+            cursor: pointer;
+            position: absolute;
+            top: -126px;
+        }
+        button.slick-prev {
+            padding-left: 25px;
+            padding-right: 20px;
+            border-radius: 23px 0 0 23px;
+            right: 59px;
+        }
+        button.slick-next {
+            padding-left: 20px;
+            padding-right: 25px;
+            border-radius: 0 23px 23px 0;
+            right: 0;
+        }
+    }
+}
+
+.section-title {
+    padding: 38px 30px;
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    background-color: #fff;
+}
+
+.product__item {
+    display: flex;
+    &-img {
+        min-width: 555px;
+        min-height: 450px;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center;
+        background-size: cover;
+    }
+    &-info {
+        padding: 50px 50px 25px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-title {
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    &-author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        // outline: none;
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-position: center;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 9px;
+        }
+        span {
+            font-size: 15px;
+            line-height: 30px;
+            color: #000;
+        }
+    }
+    &-description {
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    &-tags a {
+        padding: 9px 16px;
+        background-color: $tags;
+        border-radius: 18px;
+        & + a {
+            margin-left: 7px;
+        }
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+    }
+    &-price {
+        background-color: $button-blue;
+        color: #fff;
+        padding: 9px 20px;
+        border-radius: 18px;
+        margin-right: 19px;
+    }
+    &-likes {
+        margin-right: 19px;
+        span {
+            font-family: $icon-font;
+            color: $bage-color;
+            margin-right: 9px;
+        }
+    }
+    &-cart {
+        color: $button-blue;
+        span {
+            font-family: $icon-font;
+            margin-right: 9px;
+        }
+    }
+    &-star {
+        margin-left: auto;
+    }
+}
+
+
+//start bages list
+
+.bage {
+
+    &--wp {
+        color: $bage-color;
+        position: relative;
+        padding-left: 26px;
+        margin-left: 21px;
+        &::before {
+            content: "";
+            background-image: url(../images/icons/wp.svg);
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+//end bages list
+
+
+//end week product
+
+
+  
+  

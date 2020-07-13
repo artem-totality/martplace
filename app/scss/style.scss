@@ -222,6 +222,10 @@
             border-radius: 0 6px 6px 0;
             border: 1px solid #dcdcdc;
             padding-left: 20px;
+            appearance: none;
+            background-image: url('../images/icons/chevron-down.png');
+            background-repeat: no-repeat;
+            background-position: right 20px top 50%;
         }
         button {
             height: 55px;

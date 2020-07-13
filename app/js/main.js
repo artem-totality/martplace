@@ -11,6 +11,6 @@ $(function () {
         nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>'
     });
 
-    // var mixer = mixitup('.products__inner-box');
+    var mixer = mixitup('.newest-product__inner-box');
 
 });

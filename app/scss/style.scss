@@ -302,13 +302,13 @@
             padding-left: 25px;
             padding-right: 20px;
             border-radius: 23px 0 0 23px;
-            right: 59px;
+            right: 89px;
         }
         button.slick-next {
             padding-left: 20px;
             padding-right: 25px;
             border-radius: 0 23px 23px 0;
-            right: 0;
+            right: 30px;
         }
     }
 }
@@ -593,29 +593,177 @@
 .newest-product__bottom-btn {
     margin-top: 30px;
     text-align: center;
-    button {
-        background-color: $tags;
-        color: #747b86;
+    a {
+        background-color: $button-blue;
+        color: #fff;
         border: none;
         padding: 18px 30px;
         border-radius: 27px;
-        outline: none;
-        cursor: pointer;
-        &.mixitup-control-active {
+        // outline: none;
+    }
+}
+
+//end newest product
+//start followers feed
+
+.followers-feed {
+    padding: 120px 0;
+    background-color: $dark-bg;
+    &__slider {
+        .slick-slide {
+            width: 387px;
+        }
+        button {
+            border: none;
+            font-family: $icon-font;
+            font-size: 14px;
             background-color: $button-blue;
             color: #fff;
+            padding: 15px 0;
+            outline: none;
+            cursor: pointer;
+            position: absolute;
+            top: -126px;
+        }
+        button.slick-prev {
+            padding-left: 25px;
+            padding-right: 20px;
+            border-radius: 23px 0 0 23px;
+            right: 89px;
+        }
+        button.slick-next {
+            padding-left: 20px;
+            padding-right: 25px;
+            border-radius: 0 23px 23px 0;
+            right: 30px;
+        }
+    }
+
+}
+
+//end followers feed
+//start statistic
+
+.statistic {
+    background-color: #212225;
+    padding: 100px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        text-align: center;
+        &-ico {
+            font-family: $icon-font;
+            font-size: 48px;
+            line-height: 48px;
+            margin-bottom: 55px;
+        }
+        &-number {
+            font-size: 36px;
+            line-height: 36px;
+            margin-bottom: 10px;
+        }
+        &-description {
+            font-size: 18px;
+            line-height: 36px;
+            color: #fff;
+        }
+        &--orange {
+            .statistic__item-number,
+            .statistic__item-ico {
+                color: $orange;
+            }
+        }
+        &--sky {
+            .statistic__item-number,
+            .statistic__item-ico {
+                color: $sky;
+            }
+        }
+        &--green {
+            .statistic__item-number,
+            .statistic__item-ico {
+                color: $green;
+            }
+        }
+        &--pink {
+            .statistic__item-number,
+            .statistic__item-ico {
+                color: $pink;
+            }
         }
     }
 }
 
+//end statistic
+//start reasons
+
+.reasons {
+    padding: 120px 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: $font-color5;
+    text-align: center;
+    &__title {
+        font-size: 36px;
+        a {
+            font-size: 36px;
+            color: $button-blue;
+        }
+        margin-bottom: 25px;
+    }
+    &__description {
+        max-width: 675px;
+        margin: 0 auto 55px; 
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 361px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        padding: 56px 25px 45px;
+        margin-bottom: 30px;
+        &-ico {
+            font-family: $icon-font;
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 53px;
+            &--blue {
+                color: $button-blue;
+            }
+            &--violet {
+                color: $violet;
+            }
+            &--green {
+                color: $green;
+            }
+            &--orange {
+                color: $orange;
+            }
+            &--sky {
+                color: $sky;
+            }
+            &--pink {
+                color: $pink;
+            }
+        }
+        &-title {
+            font-size: 24px;
+            line-height: 24px;
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+    }
+}
+
+
+
+
   
-  
-
-
-
-//end newest product
-
-
-
-  
-  
+//end reasons

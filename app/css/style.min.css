@@ -130,10 +130,39 @@ body {
   margin-right: 50px;
 }
 
-.header__top-icons a {
+.icons-box .icon-menu__btn {
+  display: inline-block;
+}
+
+.icons-box .icon-menu__btn > a {
   margin-right: 33px;
   font-family: "Linearicons-Free", sans-serif;
   font-size: 20px;
+  position: relative;
+}
+
+.icons-box .icon-menu__btn > a span {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 7px;
+  border-radius: 12px;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  position: absolute;
+  right: -16px;
+  top: -13px;
+}
+
+.icons-box .notification__btn span {
+  background-color: #ff6a6d;
+}
+
+.icons-box .message__btn span {
+  background-color: #62d03b;
+}
+
+.icons-box .cart__btn span {
+  background-color: #0674ec;
 }
 
 .header__account {

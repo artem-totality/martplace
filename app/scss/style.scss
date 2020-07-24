@@ -28,10 +28,50 @@
         color: #fff;
         margin-right: 50px;
     }
-    &-icons a {
-        margin-right: 33px;
-        font-family: $icon-font;
-        font-size: 20px;
+}
+
+.icons-box {
+    .icon-menu__btn {
+        display: inline-block;
+        & > a {
+            margin-right: 33px;
+            font-family: $icon-font;
+            font-size: 20px;
+            position: relative;
+            span {
+                font-size: 14px;
+                line-height: 22px;
+                padding: 0 7px;
+                border-radius: 12px;
+                font-family: $main-font;
+                color: #fff;
+                position: absolute;
+                right: -16px;
+                top: -13px;
+            }
+        }
+    }
+    
+    .notification {
+        &__btn {
+            span {
+                background-color: $pink;
+            }
+        }
+    }
+    .message {
+        &__btn {
+            span {
+                background-color: #62d03b;
+            }
+        }
+    }
+    .cart {
+        &__btn {
+            span {
+                background-color: $button-blue;
+            }
+        }
     }
 }
 

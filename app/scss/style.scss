@@ -31,10 +31,16 @@
 }
 
 .icons-box {
-    .icon-menu__btn {
-        display: inline-block;
+    display: flex;
+    padding-right: 5px;
+    .icon-menu__wrapper {
+        position: relative;
+        margin-right: 23px;
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        height: 100px;
         & > a {
-            margin-right: 33px;
             font-family: $icon-font;
             font-size: 20px;
             position: relative;
@@ -51,21 +57,206 @@
             }
         }
     }
+
+    .drop-menu {
+        position: absolute;
+        z-index: 10;
+        border-top: 1px solid $button-blue;
+        background-color: #fff;
+        top: 100px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 8px 10px 8px;
+            border-color: transparent transparent $button-blue transparent;
+        }
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+            padding: 0 25px;
+            &-name {
+                font-size: 18px;  
+                color: #000;              
+            }
+            &-link {
+                font-size: 15px;
+                color: $button-blue;
+            }
+        }
+    }
     
     .notification {
+        &:hover .notification__menu {
+            display: block;
+        }
         &__btn {
             span {
                 background-color: $pink;
             }
         }
+        &__menu {
+            display: none;
+            width: 370px;
+            left: -25px;
+            &::before {
+                left: 32px;
+            }
+        }
+        &__item {
+            display: flex;
+            padding: 18px 0;
+            margin: 0 25px;
+            border-top: 1px solid #e8ebf0;
+            position: relative;
+            &::after {
+                content: "";
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                font-family: $icon-font;
+                font-size: 15px;
+                line-height: 32px;
+                text-align: center;
+                background-color: rgba(#0674eb, 0.1);
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &-img {
+                min-width: 40px;
+                height: 40px;
+                margin-right: 15px;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            &-info {
+                line-height: 20px;
+                width: 215px;
+            }
+            &-message {
+                font-size: 15px;
+                color: #747a86;
+            }
+            &-name {
+                font-size: 16px;
+            }
+            &-link {
+                font-size: 15px;
+                color: $button-blue;
+            }
+            &-time {
+                font-size: 14px;
+                color: #747a86;
+            }
+
+            //notification item bages
+
+            &--comment::after {
+                content: "\e83f";
+                color: $bage-color;
+            }
+            &--like::after {
+                content: "\e813";
+                color: $button-blue;
+            }
+            &--cart::after {
+                content: "\e82e";
+                color: $pink;
+            }
+            &--star::after {
+                content: "\e814";
+                color: $dark-green;
+            }
+
+            //notification item bages
+        }
     }
+    
     .message {
+        &:hover .message__menu {
+            display: block;
+        }
         &__btn {
             span {
-                background-color: #62d03b;
+                background-color: $dark-green;
+            }
+        }
+        &__menu {
+            display: none;
+            width: 370px;
+            left: -320px;
+            &::before {
+                left: 327px;
+            }
+        }
+        &__item {
+            display: flex;
+            padding: 18px 25px;
+            border-top: 1px solid #e8ebf0;
+            &-img {
+                min-width: 40px;
+                height: 40px;
+                margin-right: 15px;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            &-info {
+                line-height: 20px;
+            }
+            &-top {
+                display: flex;
+                margin-bottom: 6px;
+            }
+            &-name {
+                font-size: 16px;
+                flex: 0 0 auto;
+            }
+            &-text {
+                font-size: 15px;
+                color: $font-color5;
+            }
+            .message-status {
+                text-align: right;
+                flex: 1 0 auto;
+                padding-left: 30px;
+                color: #747a86;
+                font-size: 14px;
+                position: relative;
+                &--new {
+                    color: $button-blue;
+                    &::before {
+                        content: "\e818";
+                        font-size: 15px;
+                        font-family: $icon-font;
+                        position: absolute;
+                        left: 15px;
+                        top: 0;
+                    }
+                }
+                &--replied {
+                    &::before {
+                        content: "";
+                        background-image: url(../images/icons/replied.svg);
+                        font-size: 15px;
+                        font-family: $icon-font;
+                        width: 16px;
+                        height: 12px;
+                        position: absolute;
+                        left: 15px;
+                        top: 4px;
+                    }
+                }
             }
         }
     }
+
     .cart {
         &__btn {
             span {
@@ -485,59 +676,7 @@
     }
 }
 
-//start bages list
 
-.bage {
-    color: $bage-color;
-    position: relative;
-    padding-left: 26px;
-    margin-left: 21px;
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    &--wp::after {
-        content: "WordPress";
-    }
-    &--wp::before {
-        background-image: url(../images/icons/wp.svg);
-        width: 16px;
-        height: 16px;
-    }
-
-    &--plugin::after {
-        content: "Plugin";
-    }
-    &--plugin::before {
-        background-image: url(../images/icons/wp.svg);
-        width: 16px;
-        height: 16px;
-    }
-
-    &--psd::after {
-        content: "PSD";
-    }
-    &--psd::before {
-        background-image: url(../images/icons/ps.svg);
-        width: 13px;
-        height: 17px;
-    }
-
-    &--html::after {
-        content: "HTML";
-    }
-    &--html::before {
-        background-image: url(../images/icons/ht3.png);
-        width: 15px;
-        height: 17px;
-    }
-}
-
-//end bages list
 
 //end week product
 //start newest product

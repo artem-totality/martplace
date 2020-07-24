@@ -36,4 +36,57 @@ body {
     margin: 0 auto;
 }
 
-    
+//start bages list
+
+.bage {
+    color: $bage-color;
+    position: relative;
+    padding-left: 26px;
+    margin-left: 21px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &--wp::after {
+        content: "WordPress";
+    }
+    &--wp::before {
+        background-image: url(../images/icons/wp.svg);
+        width: 16px;
+        height: 16px;
+    }
+
+    &--plugin::after {
+        content: "Plugin";
+    }
+    &--plugin::before {
+        background-image: url(../images/icons/wp.svg);
+        width: 16px;
+        height: 16px;
+    }
+
+    &--psd::after {
+        content: "PSD";
+    }
+    &--psd::before {
+        background-image: url(../images/icons/ps.svg);
+        width: 13px;
+        height: 17px;
+    }
+
+    &--html::after {
+        content: "HTML";
+    }
+    &--html::before {
+        background-image: url(../images/icons/ht3.png);
+        width: 15px;
+        height: 17px;
+    }
+}
+
+
+//end bages list

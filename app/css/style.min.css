@@ -1,3 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?77ac69");
+  src: url("../fonts/icomoon.eot?77ac69#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?77ac69") format("truetype"), url("../fonts/icomoon.woff?77ac69") format("woff"), url("../fonts/icomoon.svg?77ac69#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+
+.icon-dribbble:before {
+  content: "\f17d";
+}
+
+.icon-google:before {
+  content: "\f1a0";
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -473,6 +524,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 4px;
+  overflow: hidden;
   -webkit-box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
           box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
 }
@@ -1037,10 +1090,12 @@ body {
 
 .choice__item--sell {
   background-image: url(../images/sell-bg.svg);
+  background-color: #0674ec;
 }
 
 .choice__item--shopping {
   background-image: url(../images/shopping-bg.svg);
+  background-color: #7347c1;
 }
 
 .choice__ico {
@@ -1197,6 +1252,7 @@ body {
 
 .news__item {
   border-radius: 4px;
+  overflow: hidden;
   background-color: white;
   -webkit-box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
@@ -1451,16 +1507,20 @@ body {
 
 .footer-form {
   position: relative;
+  margin-bottom: 48px;
 }
 
 .footer-form input {
   height: 50px;
-  width: 360px;
+  width: 100%;
   border-radius: 25px;
-  border: 1px solid #d9dfe5;
+  border: 1px solid #262b30;
+  border-left: hidden;
+  border-top: hidden;
+  border-bottom: none;
   outline: none;
   padding-left: 25px;
-  padding-right: 95px;
+  padding-right: 135px;
   font-family: "Quicksand", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -1501,15 +1561,55 @@ body {
   background-color: #0674ec;
   border: none;
   height: 50px;
-  width: 70px;
+  width: 110px;
   border-radius: 25px;
   font-family: "Linearicons-Free", sans-serif;
+  font-size: 15px;
   color: #fff;
   position: absolute;
   top: 0;
   right: 0;
   outline: none;
   cursor: pointer;
+}
+
+.footer__socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-family: 'icomoon';
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding-top: 11px;
+}
+
+.footer__socials a + a {
+  margin-left: 13px;
+}
+
+.footer__socials-fb {
+  background-color: #395799;
+}
+
+.footer__socials-tw {
+  background-color: #19b2f5;
+}
+
+.footer__socials-gg {
+  background-color: #f05b44;
+}
+
+.footer__socials-pi {
+  background-color: #9c0c1c;
+}
+
+.footer__socials-in {
+  background-color: #0da6be;
+}
+
+.footer__socials-db {
+  background-color: #ea4c89;
 }
 
 .footer__copy {

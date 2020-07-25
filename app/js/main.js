@@ -7,9 +7,6 @@ $(function () {
     });
 
     $('.week-product__slider').slick({
-        // fade: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
         prevArrow: '<button class="slick-arrow slick-prev">&#xe875;</button>',
         nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>'
     });

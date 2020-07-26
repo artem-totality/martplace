@@ -41,6 +41,8 @@ body {
 html,
 body {
     height: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .wrapper {

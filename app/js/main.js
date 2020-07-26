@@ -26,6 +26,12 @@ $(function () {
         nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>'
     });
 
-    var mixer = mixitup('.newest-product__inner-box');
+    $('.header__top-menu-btn').on('click', function(){
+        $('.header__top-box').toggleClass('header__top-box--visible');
+    });
+
+    if ($('.newest-product__inner-box').length) {
+        var mixer = mixitup('.newest-product__inner-box');
+      }
 
 });

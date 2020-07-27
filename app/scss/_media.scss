@@ -28,16 +28,52 @@
 }
 
 @media (max-width: 900px) {
+    .header__bottom {
+        position: relative;
+        &-inner {
+            position: static;
+        }
+    }
     .menu {
         &__btn { 
             display: block;
         }
         &__list {
             display: none;
+            position: absolute;
+            left: 0;
+            top: 80px;
+            width: 100%;
+            background-color: #fff;
+            margin-left: 0;
+            z-index: 5;
+            border-bottom: 5px solid $button-blue;
         }
         &__item {
+            display: block;
+            height: auto;
+            text-align: center;
+            border-top: 1px solid rgba(#0674ec, 0.15);
+            &-link {
+                display: block;
+                padding: 22px 0;
+            }
+            & + & {
+                margin-left: 0;
+            }
             &--expanded {
-                display: none;
+                // display: none;
+            }
+        }
+        &-2nd {
+            position: static;
+            width: 100%;
+            border-top: none;
+            box-shadow: none;
+            padding: 0;
+            border-top: 1px solid rgba(#0674ec, 1);
+            &__item {
+                // border-top: 1px solid rgba(#0674ec, 0.1);
             }
         }
     }
@@ -180,12 +216,17 @@
         margin-right: 10px;
     }
 
-    .header__bottom-inner {
-        display: block;
+    .header__bottom-form {
+        input {
+            padding-right: 70px;
+        }
+        button {
+            width: 46px;
+        }
     }
 
     .account-menu {
-        right: -49px;
+        right: -47px;
         &::before {
             right: 110px;
         }
@@ -193,6 +234,12 @@
 }
 
 @media (max-width: 375px) {
+    .header__bottom-form {
+        text-align: right;
+        input {
+            width: 215px;
+        }
+    }
     .footer {
         &__top {
             padding-bottom: 60px;
@@ -215,5 +262,12 @@
                 }
             }
         }
+    }
+}
+
+
+@media (min-width: 900px) {
+    .menu__list {
+        display: flex !important;
     }
 }

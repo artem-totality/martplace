@@ -30,6 +30,10 @@ $(function () {
         $('.header__top-box').toggleClass('header__top-box--visible');
     });
 
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').slideToggle();
+      });
+
     if ($('.newest-product__inner-box').length) {
         var mixer = mixitup('.newest-product__inner-box');
       }

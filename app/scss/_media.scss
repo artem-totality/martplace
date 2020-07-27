@@ -231,6 +231,20 @@
             right: 110px;
         }
     }
+
+    .footer {
+        &__socials {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-link {
+                margin-bottom: 16px;
+                text-align: center;
+                & + & {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -251,15 +265,8 @@
             }
         }
         &__socials {
-            flex-wrap: wrap;
-            justify-content: space-between;
             &-link {
-                margin-bottom: 16px;
-                text-align: center;
                 width: 33.3%;
-                & + & {
-                    margin-left: 0;
-                }
             }
         }
     }

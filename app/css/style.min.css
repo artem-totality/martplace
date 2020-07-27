@@ -2462,6 +2462,78 @@ body {
   background-position: right 20px top 50%;
 }
 
+.product-main__bottom {
+  background-color: #eff1f5;
+}
+
+.product-main__bottom-inner {
+  padding: 80px 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-main__box {
+  width: 263px;
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  padding: 30px 30px 0;
+}
+
+.product-main__box + .product-main__box {
+  margin-top: 29px;
+}
+
+.product-main__box-title {
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+
+.product-main__box-list {
+  border-top: 1px solid #e7ebee;
+  padding: 20px 0 24px;
+}
+
+.product-main__box-item {
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-main__box-category {
+  font-size: 15px;
+  color: #555555;
+  padding-left: 19px;
+  position: relative;
+}
+
+.product-main__box-category:hover {
+  color: #0674ec;
+}
+
+.product-main__box-category::before {
+  content: "\e876";
+  font-family: "Linearicons-Free", sans-serif;
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.product-main__box-amount {
+  font-size: 15px;
+  color: #555555;
+}
+
 .button-visual {
   font-family: "icomoon";
   color: #555555;
@@ -2661,6 +2733,20 @@ body {
   .account-menu::before {
     right: 110px;
   }
+  .footer__socials {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__socials-link {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .footer__socials-link + .footer__socials-link {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 375px) {
@@ -2676,20 +2762,8 @@ body {
   .footer__column--second, .footer__column--third {
     width: 100%;
   }
-  .footer__socials {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .footer__socials-link {
-    margin-bottom: 16px;
-    text-align: center;
     width: 33.3%;
-  }
-  .footer__socials-link + .footer__socials-link {
-    margin-left: 0;
   }
 }
 

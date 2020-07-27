@@ -7,6 +7,14 @@
   font-display: block;
 }
 
+.icon-th-large:before {
+  content: "\f009";
+}
+
+.icon-th-list:before {
+  content: "\f00b";
+}
+
 .icon-twitter:before {
   content: "\f099";
 }
@@ -972,6 +980,7 @@ body {
   background: -webkit-gradient(linear, right top, left top, from(#0030de), color-stop(54%, #1745ed), to(#2e5afb));
   background: -o-linear-gradient(right, #0030de 0%, #1745ed 54%, #2e5afb 100%);
   background: linear-gradient(270deg, #0030de 0%, #1745ed 54%, #2e5afb 100%);
+  opacity: 0.8;
   min-height: 725px;
   position: relative;
 }
@@ -1108,7 +1117,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #333333;
-  border: none;
   outline: none;
   position: absolute;
   top: 0;
@@ -2285,6 +2293,191 @@ body {
   background: -webkit-gradient(linear, right top, left top, from(#0d3ef2), color-stop(46%, #2d2fc7), to(#4c1f9c));
   background: -o-linear-gradient(right, #0d3ef2 0%, #2d2fc7 46%, #4c1f9c 100%);
   background: linear-gradient(270deg, #0d3ef2 0%, #2d2fc7 46%, #4c1f9c 100%);
+  opacity: 0.9;
+}
+
+.product-search {
+  padding: 83px 0 21px;
+  background-color: #0674ec;
+  background: -webkit-gradient(linear, right top, left top, from(#0d3ef2), color-stop(46%, #2d2fc7), to(#4c1f9c));
+  background: -o-linear-gradient(right, #0d3ef2 0%, #2d2fc7 46%, #4c1f9c 100%);
+  background: linear-gradient(270deg, #0d3ef2 0%, #2d2fc7 46%, #4c1f9c 100%);
+  opacity: 0.9;
+  border-bottom: 1px solid #54468f;
+}
+
+.product-search__inner {
+  text-align: center;
+}
+
+.product-search__description {
+  font-size: 26px;
+  padding-bottom: 32px;
+  color: #fff;
+}
+
+.product-search__description span {
+  font-weight: 500;
+}
+
+.product-search__form {
+  position: relative;
+  max-width: 555px;
+  margin: 0 auto 28px;
+}
+
+.product-search__form input {
+  height: 55px;
+  width: 100%;
+  border-radius: 28px;
+  border: 1px solid #d9dfe5;
+  outline: none;
+  padding-left: 25px;
+  padding-right: 95px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.product-search__form input::-webkit-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.product-search__form input::-moz-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.product-search__form input:-ms-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.product-search__form input::-ms-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.product-search__form input::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.product-search__form button {
+  background-color: #0674ec;
+  border: none;
+  height: 55px;
+  width: 110px;
+  border-radius: 28px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-main__top {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.product-main__top-inner {
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-main__top-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-main__top-link a {
+  font-size: 16px;
+  color: #555555;
+}
+
+.product-main__top-link a:hover {
+  color: #0674ec;
+}
+
+.product-main__top-link + .product-main__top-link {
+  margin-left: 40px;
+}
+
+.product-main__top-group {
+  border: 1px solid #eceff2;
+  border-radius: 3px;
+}
+
+.product-main__top-group--select {
+  border-color: transparent;
+}
+
+.product-main__top-group--button {
+  padding: 0 7px;
+}
+
+.product-main__top-group + .product-main__top-group {
+  margin-left: 30px;
+}
+
+.product-main__top-select {
+  border: 1px solid #eceff2;
+  border-radius: 3px;
+  outline: none;
+  width: 220px;
+  height: 44px;
+  padding-left: 18px;
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../images/icons/chevron-down-litle.png");
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%;
+}
+
+.button-visual {
+  font-family: "icomoon";
+  color: #555555;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 11px 3px;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.button-visual.active {
+  color: #0674ec;
 }
 
 @media (max-width: 1110px) {

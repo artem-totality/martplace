@@ -602,6 +602,7 @@
     align-items: center;
     background-color: $button-blue;
     background: linear-gradient(270deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
+    opacity: 0.8;
     min-height: 725px;
     position: relative;
     &__inner {
@@ -694,7 +695,6 @@
             font-size: 16px;
             font-weight: 400;
             color: $font-color3;
-            border: none;
             outline: none;
             position: absolute;
             top: 0;
@@ -1670,10 +1670,157 @@
     padding: 48px 0 34px;
     background-color: $button-blue;
     background: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
+    opacity: 0.9;
 }
 
 //end menu-style1
 //end menu-footer.html
+
+//start product-grid.html
+//start product-search
+
+.product-search {
+    padding: 83px 0 21px;
+        background-color: $button-blue;
+        background: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);    
+        opacity: 0.9;
+        border-bottom: 1px solid #54468f;
+    &__inner {
+        text-align: center;
+    }
+    &__description {
+       font-size: 26px;
+       padding-bottom: 32px;
+       color: #fff;
+       span {
+           font-weight: 500;
+       }
+    }
+    &__form {
+        position: relative;
+        max-width: 555px;
+        margin: 0 auto 28px;
+        input {
+            height: 55px;
+            width: 100%;
+            border-radius: 28px;
+            border: 1px solid #d9dfe5;
+            outline: none;
+            padding-left: 25px;
+            padding-right: 95px;
+            font-family: $main-font;
+            font-size: 15px;
+            font-weight: 400;
+            color: $font-color3;
+            &::placeholder {
+                font-family: $main-font;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+        button {
+            background-color: $button-blue;
+            border: none;
+            height: 55px;
+            width: 110px;
+            border-radius: 28px;
+            font-family: $main-font;
+            font-size: 15px;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+}
+
+//end product-search
+//start product-main
+
+.product-main {
+    &__top { 
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        &-inner {
+            min-height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+        }
+        &-link {
+            a {
+                font-size: 16px;
+                color: $font-color5;
+                &:hover {
+                    color: $button-blue;
+                }
+            }
+            & + & {
+                margin-left: 40px;
+            }
+        }
+        &-group {
+            border: 1px solid #eceff2;
+            border-radius: 3px;
+            &--select {
+                border-color: transparent;;
+            }
+            &--button {
+                padding: 0 7px;
+            }
+            & + & {
+                margin-left: 30px;
+            }
+        }
+        &-select {
+            border: 1px solid #eceff2;
+            border-radius: 3px;
+            outline: none;
+            width: 220px;            
+            height: 44px;
+            padding-left: 18px;
+            padding-right: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $font-color5;
+            appearance: none;
+            background-image: url("../images/icons/chevron-down-litle.png");
+            background-repeat: no-repeat;
+            background-position: right 20px top 50%;
+        }
+    }
+}
+
+.button-visual {
+    font-family: "icomoon";
+    color: $font-color5;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 11px 3px;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    &.active {
+        color: $button-blue;
+    }
+}
+
+//start product-main
+
+
+
+  
+
+//end product-grid.html
 
 
 

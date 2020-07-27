@@ -25,6 +25,12 @@
   //   -moz-osx-font-smoothing: grayscale;
   // }
   
+  .icon-th-large:before {
+    content: "\f009";
+  }
+  .icon-th-list:before {
+    content: "\f00b";
+  }
   .icon-twitter:before {
     content: "\f099";
   }
@@ -46,4 +52,3 @@
   .icon-google:before {
     content: "\f1a0";
   }
-  

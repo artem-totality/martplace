@@ -60,6 +60,7 @@ body {
 }
 
 //press footer to bottom
+//common things
 
 .container  {
     max-width: 1170px;
@@ -67,6 +68,21 @@ body {
     margin: 0 auto;
 }
 
+.light-title {
+    font-size: 36px;
+    span {
+        font-size: 36px;
+        color: $button-blue;
+    }
+    &--2nd-level {
+        font-size: 30px;
+        line-height: 2.2;
+        color: #fff;
+
+    }
+}
+
+//common things
 //start bages list
 
 .bage {
@@ -133,3 +149,36 @@ body {
 }
 
 //end star raiting style
+//start breadcrumbs 
+
+.breadcrumbs {
+    &__list {
+        li {
+            display: inline-block;
+            position: relative;
+            a, span {
+                color: #fff;
+                font-size: 15px;
+                line-height: 2.2;
+            }
+            & + li {
+                padding-left: 18px;
+                &::before {
+                    content: "/";
+                    position: absolute;
+                    left: 5px;
+                    top: 7px;
+                    color: #fff;
+                }
+            }
+            &:last-child {
+                a,
+                span {
+                    color: #bfcad7;
+                }
+            }
+        }
+    } 
+}
+//end breadcrumbs 
+

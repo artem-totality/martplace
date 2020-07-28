@@ -385,7 +385,7 @@ body {
           box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   color: #fff;
-  margin-right: 50px;
+  margin-right: 39px;
 }
 
 .header__top-menu-btn {
@@ -453,13 +453,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 5px;
+  padding-right: 16px;
 }
 
 .icons-box .icon-menu__wrapper {
   position: relative;
-  margin-right: 23px;
-  padding: 0 5px;
+  padding: 0 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +497,7 @@ body {
 .icons-box .notification-menu {
   display: none;
   width: 370px;
-  left: -25px;
+  left: -14px;
 }
 
 .icons-box .notification-menu::before {
@@ -596,7 +595,7 @@ body {
 .icons-box .message-menu {
   display: none;
   width: 370px;
-  left: -320px;
+  left: -309px;
 }
 
 .icons-box .message-menu::before {
@@ -689,7 +688,7 @@ body {
 .icons-box .cart-menu {
   display: none;
   width: 400px;
-  left: -334px;
+  left: -323px;
 }
 
 .icons-box .cart-menu::before {
@@ -983,6 +982,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 33px;
+}
+
+.menu__item:last-child {
+  padding-right: 13px;
 }
 
 .menu__item:hover .menu__item-link {
@@ -997,10 +1001,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.menu__item + .menu__item {
-  padding-left: 33px;
 }
 
 .menu__item-link {
@@ -2884,13 +2884,11 @@ body {
     height: auto;
     text-align: center;
     border-top: 1px solid rgba(6, 116, 236, 0.15);
+    padding-right: 0;
   }
   .menu__item-link {
     display: block;
     padding: 22px 0;
-  }
-  .menu__item + .menu__item {
-    margin-left: 0;
   }
   .menu-2nd {
     position: static;
@@ -2911,7 +2909,7 @@ body {
 
 @media (max-width: 715px) {
   .icons-box .message-menu {
-    left: -280px;
+    left: -269px;
   }
   .icons-box .message-menu::before {
     left: 287px;
@@ -2970,13 +2968,13 @@ body {
     top: 70px;
   }
   .icons-box .notification-menu::before {
-    left: 22px;
+    left: 33px;
   }
   .icons-box .message-menu::before {
-    left: 75px;
+    left: 86px;
   }
   .icons-box .cart-menu::before {
-    left: 130px;
+    left: 141px;
   }
   .header__account {
     height: 70px;
@@ -2995,7 +2993,7 @@ body {
     width: 320px;
   }
   .icons-box .cart-menu::before {
-    left: 23px;
+    left: 34px;
   }
   .header__account-avatar {
     margin-left: 0;
@@ -3008,10 +3006,10 @@ body {
     width: 46px;
   }
   .account-menu {
-    right: -47px;
+    right: -16px;
   }
   .account-menu::before {
-    right: 110px;
+    right: 79px;
   }
   .footer__socials {
     -ms-flex-wrap: wrap;
@@ -3047,7 +3045,7 @@ body {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 901px) {
   .menu__list {
     display: -webkit-box !important;
     display: -ms-flexbox !important;

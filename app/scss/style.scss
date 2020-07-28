@@ -26,7 +26,7 @@
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
         font-size: 14px;
         color: #fff;
-        margin-right: 50px;
+        margin-right: 39px;
     }
     &-menu-btn {
         display: none;
@@ -81,11 +81,10 @@
 
 .icons-box {
     display: flex;
-    padding-right: 5px;
+    padding-right: 16px;
     .icon-menu__wrapper {
         position: relative;
-        margin-right: 23px;
-        padding: 0 5px;
+        padding: 0 16px;
         display: flex;
         align-items: center;
         height: 100px;
@@ -122,7 +121,7 @@
     .notification-menu {
         display: none;
         width: 370px;
-        left: -25px;
+        left: -14px;
         &::before {
             left: 32px;
         }
@@ -212,7 +211,7 @@
     .message-menu {
         display: none;
         width: 370px;
-        left: -320px;
+        left: -309px;
         &::before {
             left: 327px;
         }
@@ -292,7 +291,7 @@
     .cart-menu {
         display: none;
         width: 400px;
-        left: -334px;
+        left: -323px;
         &::before {
             left: 341px;
         }
@@ -499,6 +498,10 @@
         height: 80px;
         display: flex;
         align-items: center;
+        padding-right: 33px;
+        &:last-child {
+            padding-right: 13px;
+        }
         &:hover {
             .menu__item-link {
                 color: $button-blue;
@@ -510,9 +513,9 @@
                 display: flex;
             }
         }
-        & + & {
-            padding-left: 33px;
-        }
+        // & + & {
+        //     margin-left: 33px;
+        // }
         &-link {
             text-transform: uppercase;
             font-weight: 500;

@@ -241,3 +241,55 @@ body {
 }
 
 //end price-range
+//start pagination 
+
+.pagination {
+    &__list {
+        display: inline-block;
+        li {
+            display: inline-block;
+            & + li {
+                margin-left: 6px;
+            }
+        }
+        a, span {
+            display: block;
+            text-align: center;
+            width: 50px;
+            color: #747b86;
+            background-color: #fff;
+            font-size: 16px;
+            line-height: 38px;
+            border-radius: 19px;
+            font-weight: 500;
+            &.active {
+                background-color: $button-blue;
+                color: #fff;
+            }
+        }
+    }
+    &__prev, 
+    &__next {
+        display: inline-block;
+        a, span {
+        display: block;
+        text-align: center;
+        width: 50px;
+        color: #747b86;
+        background-color: #ffF;
+        font-size: 16px;
+        line-height: 38px;
+        border-radius: 19px;
+        font-weight: 500;
+        }
+        &.disabled {
+            a, span {
+                color: #fff;
+                background-color: $bage-color;
+            }
+        }
+    }
+}
+
+//end pagination
+

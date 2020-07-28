@@ -2,7 +2,7 @@ $(function () {
 
     $('.rate-star').rateYo({
         rating: 4,
-        starWidth: '17px',
+        starWidth: '13px',
         readOnly: true
     });
 
@@ -42,9 +42,9 @@ $(function () {
     $(".js-range-slider").ionRangeSlider({
         type: "double",
         min: 0,
-        max: 1000,
-        from: 0,
-        to: 600,
+        max: 330,
+        from: 30,
+        to: 300,
         prefix: "$"
     });
 

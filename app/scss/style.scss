@@ -1933,6 +1933,7 @@
     }
     &__content {
         margin-left: 30px;
+        width: 100%;
     }
     &__items {
         display: flex;
@@ -1964,8 +1965,7 @@
             line-height: 24px;
             font-weight: 500;
         }
-        &-category {
-            display: block;
+        &-top {
             margin-bottom: 13px;
         }
         &-author {
@@ -2000,9 +2000,97 @@
 }
 
 //end product__item--small
-
 //end product-grid.html
 
+//start product-list.html
+//start product__item--small-list
+
+.product__item--small-list {
+    width: 100%;
+    margin-bottom: 30px;
+    .product__item {
+        &-img {
+            min-width: 230px;
+            min-height: 210px;
+        }
+        &-info {
+            width: 100%;
+            flex-direction: row;
+            padding: 30px 10px 29px 19px;
+        }
+        &-top {
+            width: 240px;
+            padding-right: 16px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-title {
+            margin: -4px 0 15px;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+            flex: 0 0 auto;
+        }
+        &-description {
+            margin-bottom: 0;
+            max-height: 74px;
+            overflow: hidden;
+            flex: 1 0 auto;
+        }
+        
+        .bage {
+            flex: 0 0 auto;
+        }
+        &-box {
+            padding: 15px 20px 0;
+            width: 207px;
+            border-left: 1px solid #ececec;
+        }
+        &-author {
+            margin-right: 0;
+            margin-bottom: 22px;
+        }
+        &-likes {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &-comments {
+            margin-bottom: 14px;
+            color: #7e7e7e;
+            padding-left: 23px;
+            position: relative;
+            &::before {
+                content: "\e83f";
+                font-family: $icon-font;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        &-bottom { 
+            padding: 40px 10px;
+            flex-direction: column;
+            justify-content: space-between;
+            border-top: none;
+            border-left: 1px solid #ececec;
+        }
+        &-price {
+            padding-top: 6px;
+            margin: 0;
+            background-color: rgba(#0674ec, 0.1);
+            color: $button-blue;
+            border-radius: 16px;
+        }
+        &-star {
+            margin-left: -5px;
+        }
+    }
+}
+
+
+//end product__item--small-list
+
+//end product-list.html
 
 
 

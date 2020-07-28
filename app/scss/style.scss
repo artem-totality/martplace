@@ -1740,6 +1740,23 @@
 //end product-search
 //start product-main
 
+.button-visual {
+    font-family: "icomoon";
+    color: $font-color5;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 11px 3px;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    &.active {
+        color: $button-blue;
+    }
+}
+
 .product-main {
     &__top { 
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
@@ -1808,16 +1825,58 @@
         background-color: #fff;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         padding: 30px 30px 0;
+        &--price-range {
+            padding: 30px 0 0;
+            .product-main__box-title {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .product-main__price-range {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
         & + & {
             margin-top: 29px;
         }
         &-title {
             font-size: 20px;
-            padding-bottom: 24px;
+            margin-bottom: 24px;
+            cursor: pointer;
+            position: relative;
+            &::after {
+                content: "\e874";
+                transition: all 0.5s;
+                font-family: $icon-font;
+                font-size: 12px;
+                position: absolute;
+                right: 0;
+                top: 7px;
+            }
+            &--closed {
+                margin: 0;
+                padding-bottom: 24px;
+                &::after {
+                    transform: rotate(90deg);
+                }
+            }
         }
         &-list {
             border-top: 1px solid #e7ebee;
             padding: 20px 0 24px;
+            &--shevron {
+                .product-main__box-category::before {
+                    content: "\e876";
+                }
+            }
+            &--circle {
+                .product-main__box-category::before {
+                    font-family: 'icomoon';
+                    content: "\f1db";
+                    top: 4px;
+                }
+            }
         }
         &-item {
             height: 36px;
@@ -1834,42 +1893,40 @@
                 color: $button-blue;
             }
             &::before {
-                content: "\e876";
                 font-family: $icon-font;
                 font-size: 10px;
                 position: absolute;
                 left: 0;
                 top: 3px;
             }
+            
         }
         &-amount {
             font-size: 15px;
             color: $font-color5;
         }
     }
-}
-  
-
-  
-
-.button-visual {
-    font-family: "icomoon";
-    color: $font-color5;
-    font-size: 16px;
-    line-height: 18px;
-    margin: 11px 3px;
-    cursor: pointer;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    &.active {
-        color: $button-blue;
+    &__price-range {
+        border-top: 1px solid #e7ebee;
+        padding: 13px 0 40px;
+        text-align: center;
+        button {
+            outline: none;
+            border: none;
+            width: 170px;
+            color: #fff;
+            margin-top: 72px;
+            background-color: $button-blue;
+            padding: 13px 0;
+            border-radius: 22px;
+        }
     }
 }
+  
 
-//start product-main
+
+
+//end product-main
 
 
 

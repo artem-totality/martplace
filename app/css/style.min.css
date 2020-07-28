@@ -43,6 +43,10 @@
   content: "\f1a0";
 }
 
+.icon-circle-thin:before {
+  content: "\f1db";
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -226,6 +230,56 @@ body {
 .breadcrumbs__list li:last-child a,
 .breadcrumbs__list li:last-child span {
   color: #bfcad7;
+}
+
+.irs-min, .irs-max {
+  display: none;
+}
+
+.irs-from, .irs-single, .irs-to {
+  top: 45px;
+}
+
+.irs--flat .irs-line {
+  background-color: #efedf3;
+  height: 5px;
+}
+
+.irs--flat .irs-bar {
+  background-color: #7347c1;
+  height: 5px;
+}
+
+.irs--flat .irs-handle {
+  width: 18px;
+  height: 18px;
+  border: 4px solid #0674ec;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 18px;
+}
+
+.irs--flat .irs-handle > i:first-child {
+  display: none;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+  font-family: "Quicksand", sans-serif;
+  color: #7347c1;
+  width: 80px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.333;
+  text-shadow: none;
+  padding: 6px 0 7px;
+  border-radius: 16px;
+  background-color: #f1ecf9;
+  top: 50px;
+  z-index: 100;
+}
+
+.irs--flat .irs-from::before, .irs--flat .irs-single::before, .irs--flat .irs-to::before {
+  display: none;
 }
 
 .header__top {
@@ -2386,6 +2440,24 @@ body {
   cursor: pointer;
 }
 
+.button-visual {
+  font-family: "icomoon";
+  color: #555555;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 11px 3px;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.button-visual.active {
+  color: #0674ec;
+}
+
 .product-main__top {
   -webkit-box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
           box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
@@ -2482,18 +2554,67 @@ body {
   padding: 30px 30px 0;
 }
 
+.product-main__box--price-range {
+  padding: 30px 0 0;
+}
+
+.product-main__box--price-range .product-main__box-title {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.product-main__box--price-range .product-main__price-range {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .product-main__box + .product-main__box {
   margin-top: 29px;
 }
 
 .product-main__box-title {
   font-size: 20px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.product-main__box-title::after {
+  content: "\e874";
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "Linearicons-Free", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+
+.product-main__box-title--closed {
+  margin: 0;
   padding-bottom: 24px;
+}
+
+.product-main__box-title--closed::after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .product-main__box-list {
   border-top: 1px solid #e7ebee;
   padding: 20px 0 24px;
+}
+
+.product-main__box-list--shevron .product-main__box-category::before {
+  content: "\e876";
+}
+
+.product-main__box-list--circle .product-main__box-category::before {
+  font-family: 'icomoon';
+  content: "\f1db";
+  top: 4px;
 }
 
 .product-main__box-item {
@@ -2521,7 +2642,6 @@ body {
 }
 
 .product-main__box-category::before {
-  content: "\e876";
   font-family: "Linearicons-Free", sans-serif;
   font-size: 10px;
   position: absolute;
@@ -2534,22 +2654,21 @@ body {
   color: #555555;
 }
 
-.button-visual {
-  font-family: "icomoon";
-  color: #555555;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 11px 3px;
-  cursor: pointer;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  border: none;
-  outline: none;
-  background-color: transparent;
+.product-main__price-range {
+  border-top: 1px solid #e7ebee;
+  padding: 13px 0 40px;
+  text-align: center;
 }
 
-.button-visual.active {
-  color: #0674ec;
+.product-main__price-range button {
+  outline: none;
+  border: none;
+  width: 170px;
+  color: #fff;
+  margin-top: 72px;
+  background-color: #0674ec;
+  padding: 13px 0;
+  border-radius: 22px;
 }
 
 @media (max-width: 1110px) {

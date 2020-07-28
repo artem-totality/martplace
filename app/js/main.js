@@ -32,7 +32,21 @@ $(function () {
 
     $('.menu__btn').on('click', function(){
         $('.menu__list').slideToggle();
-      });
+    });
+
+    $('.product-main__box-title').on('click', function(){
+        $(this).toggleClass('product-main__box-title--closed');
+        $(this).next().slideToggle();
+    });
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 0,
+        to: 600,
+        prefix: "$"
+    });
 
     if ($('.newest-product__inner-box').length) {
         var mixer = mixitup('.newest-product__inner-box');

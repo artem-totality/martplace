@@ -796,7 +796,7 @@
                                     <div class="product-main__box-title">
                                         Categories
                                     </div>
-                                    <ul class="product-main__box-list">
+                                    <ul class="product-main__box-list product-main__box-list--shevron">
                                         <li class="product-main__box-item">
                                             <a class="product-main__box-category" href="#">Wordpress</a>
                                             <span class="product-main__box-amount">35</span>
@@ -831,7 +831,7 @@
                                     <div class="product-main__box-title">
                                         Filter Products
                                     </div>
-                                    <ul class="product-main__box-list">
+                                    <ul class="product-main__box-list product-main__box-list--circle">
                                         <li class="product-main__box-item">
                                             <a class="product-main__box-category" href="#">Trending Products</a>
                                         </li>
@@ -855,11 +855,16 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="product-main__box">
+                                <div class="product-main__box product-main__box--price-range">
                                     <div class="product-main__box-title">
                                         Pricing Range
                                     </div>
-
+                                    <div class="product-main__price-range">
+                                        <form>
+                                            <input type="text" class="js-range-slider" name="my_range" value="" />
+                                            <button type="submit">Search</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product-main__content">

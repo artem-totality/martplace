@@ -181,4 +181,63 @@ body {
     } 
 }
 //end breadcrumbs 
+//start price-range
 
+.irs {
+    &-min,
+    &-max {
+        display: none;
+    }
+    &-from,
+    &-single,
+    &-to {
+       top: 45px;
+    }
+}
+
+.irs--flat {
+    .irs-line {
+        background-color: #efedf3;
+        height: 5px;
+    }
+    .irs-bar {
+        background-color: $bage-color;
+        height: 5px;
+    }
+    .irs-handle {
+        width: 18px;
+        height: 18px;
+        border: 4px solid $button-blue;
+        background-color: #fff;
+        border-radius: 50%;
+        top: 18px;
+        &>i:first-child {
+            display: none;
+        }
+    }
+
+    .irs {
+        &-from,
+        &-single,
+        &-to {
+            font-family: $main-font;
+            color: $bage-color;
+            width: 80px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.333;
+            text-shadow: none;
+            padding: 6px 0 7px;
+            border-radius: 16px;
+            background-color: #f1ecf9;
+            top: 50px;
+            z-index: 100;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    
+}
+
+//end price-range

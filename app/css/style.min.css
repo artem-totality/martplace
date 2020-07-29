@@ -147,6 +147,14 @@ body {
   color: #000;
 }
 
+.description {
+  max-width: 675px;
+  margin: 25px auto 55px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #555555;
+}
+
 .link-btn {
   text-align: center;
 }
@@ -1888,11 +1896,6 @@ body {
   text-align: center;
 }
 
-.reasons__description {
-  max-width: 675px;
-  margin: 25px auto 55px;
-}
-
 .reasons__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3160,6 +3163,189 @@ body {
   font-size: 16px;
   line-height: 26px;
   padding: 30px 30px 46px;
+}
+
+.pricing-plan {
+  padding: 115px 0;
+  background-color: #eff1f5;
+}
+
+.pricing-plan__inner {
+  text-align: center;
+}
+
+.pricing-plan__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pricing-plan__item {
+  width: 360px;
+  background-color: #fff;
+  padding: 0 30px 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.pricing-plan__item-title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #e8ebf0;
+}
+
+.pricing-plan__item-price {
+  text-align: center;
+}
+
+.pricing-plan__item-price span {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 32px;
+  color: #000;
+  position: relative;
+  padding: 0 57px 0 12px;
+  margin: 26px 0 36px;
+}
+
+.pricing-plan__item-price span::before {
+  content: "$";
+  font-size: 18px;
+  position: absolute;
+  left: 3px;
+  top: -4px;
+}
+
+.pricing-plan__item-price span::after {
+  content: "/month";
+  font-size: 16px;
+  position: absolute;
+  color: #555555;
+  right: 1px;
+  top: 6px;
+}
+
+.pricing-plan__item-list {
+  text-align: left;
+}
+
+.pricing-plan__item-list li {
+  font-size: 16px;
+  line-height: 36px;
+  padding-left: 23px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-plan__item-list li span {
+  color: #000;
+  font-weight: 500;
+}
+
+.pricing-plan__item-list li .pricing-plan__item-tip {
+  margin-left: 12px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #555555;
+  font-family: "Linearicons-Free", sans-serif;
+  position: relative;
+}
+
+.pricing-plan__item-list li .pricing-plan__item-tip:hover::before, .pricing-plan__item-list li .pricing-plan__item-tip:hover::after {
+  opacity: 1;
+}
+
+.pricing-plan__item-list li .pricing-plan__item-tip::before {
+  opacity: 0;
+  content: "quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats.";
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  width: 300px;
+  height: 130px;
+  padding: 15px 30px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  position: absolute;
+  left: -220px;
+  top: -131px;
+}
+
+.pricing-plan__item-list li .pricing-plan__item-tip::after {
+  opacity: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 7.5px 0 7.5px;
+  border-color: #000000 transparent transparent transparent;
+  position: absolute;
+  left: 1px;
+  top: -1px;
+}
+
+.pricing-plan__item-list li::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #c5cad4;
+  left: 0;
+  top: 15px;
+}
+
+.pricing-plan__item-link {
+  margin: 36px 0 0;
+}
+
+.pricing-plan__item-link a {
+  color: #fff;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.pricing-plan__item--pink {
+  border-top: 3px solid #ff6a6d;
+}
+
+.pricing-plan__item--pink .pricing-plan__item-link a {
+  background-color: #ff6a6d;
+}
+
+.pricing-plan__item--blue {
+  border-top: 3px solid #0674ec;
+}
+
+.pricing-plan__item--blue .pricing-plan__item-link a {
+  background-color: #0674ec;
+}
+
+.pricing-plan__item--orange {
+  border-top: 3px solid #feb71d;
+}
+
+.pricing-plan__item--orange .pricing-plan__item-link a {
+  background-color: #feb71d;
 }
 
 @media (max-width: 1110px) {

@@ -88,6 +88,14 @@ body {
     }
 }
 
+.description {
+    max-width: 675px;
+    margin: 25px auto 55px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $font-color5;
+}
+
 .link-btn {
     text-align: center;
     a {

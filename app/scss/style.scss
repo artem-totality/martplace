@@ -974,11 +974,12 @@
             }
         }
     }
-    &-box {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+}
+
+.product-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product__item--vertical {
@@ -1776,51 +1777,6 @@
             justify-content: space-between;
             align-items: center;
         }
-        &-box {
-            display: flex;
-            align-items: center;
-        }
-        &-link {
-            a {
-                font-size: 16px;
-                color: $font-color5;
-                &:hover {
-                    color: $button-blue;
-                }
-            }
-            & + & {
-                margin-left: 40px;
-            }
-        }
-        &-group {
-            border: 1px solid #eceff2;
-            border-radius: 3px;
-            &--select {
-                border-color: transparent;;
-            }
-            &--button {
-                padding: 0 7px;
-            }
-            & + & {
-                margin-left: 30px;
-            }
-        }
-        &-select {
-            border: 1px solid #eceff2;
-            border-radius: 3px;
-            outline: none;
-            width: 220px;            
-            height: 44px;
-            padding-left: 18px;
-            padding-right: 40px;
-            font-size: 14px;
-            font-weight: 400;
-            color: $font-color5;
-            appearance: none;
-            background-image: url("../images/icons/chevron-down-litle.png");
-            background-repeat: no-repeat;
-            background-position: right 20px top 50%;
-        }
     }
     &__bottom {
         background-color: $dark-bg;
@@ -1939,7 +1895,6 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding-bottom: 30px;
     }
 }
 
@@ -2089,10 +2044,31 @@
 
 
 //end product__item--small-list
-
 //end product-list.html
 
+//start favorites.html
+//start favorites
+.favorites {
+    &__top {
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        &-inner {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__content {
+        background-color: $dark-bg;
+        &-inner {
+            padding-top: 80px;
+            padding-bottom: 120px;
+        }
+    }
+}
 
+//end favorites
+
+//end favorites.html
 
 
 

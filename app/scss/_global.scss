@@ -78,7 +78,24 @@ body {
         font-size: 30px;
         line-height: 2.2;
         color: #fff;
+        &-black {
+            color: #000;
+        }
+    }
+}
 
+.link-btn {
+    text-align: center;
+    a {
+        font-size: 16px;
+        line-height: 1.15;
+        background-color: $button-blue;
+        color: #fff;
+        border: none;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        padding: 18px 10px;
+        border-radius: 28px;
+        width: 190px;
     }
 }
 

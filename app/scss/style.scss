@@ -1667,6 +1667,10 @@
     background-color: $button-blue;
     background: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
     opacity: 0.9;
+    &--how-it-works {
+        padding: 80px 0 20px;
+        text-align: center;
+    }
 }
 
 //end menu-style1
@@ -2074,6 +2078,80 @@
 
 //end page-404
 //end page-404.html
+
+//start how-it-works.html
+//start how
+
+.how {
+    &__title {
+        line-height: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+//end how
+//start how-steps 
+
+.how-steps {
+    &__item {
+        padding: 100px 0;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-info {
+            width: 472px;
+            padding-left: 15px;
+        }
+        &-title {
+            font-size: 30px;
+            line-height: 46px;
+            color: #000;
+            margin: 26px 0;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 30px;
+            padding-bottom: 20px;
+        }
+        &-btn {
+            width: 170px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: #fff;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+            a {
+                font-size: 16px;
+                color: $button-blue;
+                transition: all 0.5s;
+            }
+            &:hover {
+                background-color: $button-blue;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        &--reverse {
+            background-color: $dark-bg;
+            .how-steps__item-inner {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+}
+
+//end how-steps 
+
+
+//end how-it-works.html
+
 
 
 

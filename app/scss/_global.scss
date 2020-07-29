@@ -329,6 +329,9 @@ body {
     &--center {
         justify-content: center;
     }
+    &--left {
+        justify-content: flex-start;
+    }
 }
 
 //end pagination

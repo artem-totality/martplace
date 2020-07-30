@@ -224,15 +224,12 @@
         }
     }
 
-    
-    .socials {
+    .footer__socials.socials {
         justify-content: space-between;
-        &-link {
+        .socials-link {
             margin-bottom: 16px;
             text-align: center;
-            & + & {
-                margin-left: 0;
-            }
+            margin-left: 0;
         }
     }
 }
@@ -257,8 +254,8 @@
         }
     }
 
-    .socials {
-        &-link {
+    .footer__socials.socials {
+        .socials-link {
             width: 33.3%;
         }
     }

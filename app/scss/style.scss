@@ -1000,7 +1000,10 @@
             height: 230px;
         }
         &-info {
-            padding: 30px 30px 16px;
+            padding: 30px 0 16px;
+        }
+        &-top {
+            padding: 0 30px;
         }
         &-title {
             font-size: 20px;
@@ -1016,7 +1019,7 @@
             }
         }
         &-bottom {
-            padding-top: 15px;
+            padding: 15px 30px 0;
         }
         &-price {
             margin-right: 13px;
@@ -1615,39 +1618,8 @@
         cursor: pointer;
     }
     &__socials {
-        display: flex;
         a {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            font-family: 'icomoon';
-            text-align: center;
             color: #fff;
-            font-size: 16px;
-            padding-top: 11px;
-        }
-        &-link {
-            & + & {
-                margin-left: 16px;
-            }
-        }
-        &-fb {
-            background-color: #395799;
-        }
-        &-tw {
-            background-color: #19b2f5;
-        }
-        &-gg {
-            background-color: #f05b44;
-        }
-        &-pi {
-            background-color: #9c0c1c;
-        }
-        &-in {
-            background-color: #0da6be;
-        }
-        &-db {
-            background-color: #ea4c89;
         }
     }
     &__copy {
@@ -2654,6 +2626,80 @@
 
 //end blog__search
 //end blog-v2.html
+
+//start single-product-v2.html
+//start single-product
+.single-product {
+    background-color: $dark-bg;
+    img {
+        display: block;
+    }
+    &__inner {
+        padding: 70px 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box {
+        width: 750px;
+        border-radius: 4px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        & + & {
+            margin-top: 30px;
+        }
+    }
+    &__item {
+        &-info {
+            padding: 0 30px 10px;
+        }
+        &-links {
+            padding: 30px 0;
+            display: flex;
+            justify-content: center;
+            a {
+                margin: 0 15px;
+            }
+            .fav {
+                background-color: #fff;
+                color: $bage-color;
+                span {
+                    padding-left: 25px;
+                    position: relative;
+                    &::before {
+                        content: "\e813";
+                        font-family: "Linearicons-Free", sans-serif;
+                        position: absolute;
+                        left: 0;
+                        top: 1px;
+                    }
+                }
+            }
+        }
+        &-share {
+
+        }
+    }
+
+}
+
+//end single-product
+//start single-favorites
+
+.single-favorites {
+    background-color: #f6f7fb;
+    &__inner {
+        padding: 120px 0 90px;
+    }
+    &__title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
+
+
+//end single-favorites
+//end single-product-v2.html
 
 
 @import "media";

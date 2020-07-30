@@ -105,7 +105,7 @@ body {
         color: #fff;
         border: none;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-        padding: 18px 10px;
+        padding: 17px 10px;
         border-radius: 28px;
         width: 190px;
     }
@@ -421,7 +421,47 @@ body {
     }
 }
 
-
 //end selector box
+//start socials
 
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        font-family: 'icomoon';
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        line-height: 42px;
+    }
+    &-link {
+        & + & {
+            margin-left: 16px;
+        }
+    }
+    &-fb {
+        background-color: #395799;
+    }
+    &-tw {
+        background-color: #19b2f5;
+    }
+    &-gg {
+        background-color: #f05b44;
+    }
+    &-pi {
+        background-color: #9c0c1c;
+    }
+    &-in {
+        background-color: #0da6be;
+    }
+    &-db {
+        background-color: #ea4c89;
+    }
+}
+
+
+//end socials
 

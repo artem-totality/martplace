@@ -48,8 +48,8 @@ $(function () {
         prefix: "$"
     });
 
-    if ($('.newest-product__inner-box').length) {
-        var mixer = mixitup('.newest-product__inner-box');
-      }
+    if ($('.product-box').length) {
+        var mixer = mixitup('.product-box');
+    }
 
 });

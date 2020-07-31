@@ -1325,6 +1325,9 @@
             height: 80px;
             border-radius: 50%;
             background-color: #808080;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
         &-info {
             margin-left: 20px;
@@ -2821,6 +2824,154 @@
                 }
             }
             margin-bottom: 30px;
+        }
+    }
+    &__statistic {
+        &-item {
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ececec;
+            &--sales {
+                padding-top: 5px;
+                align-items: flex-start;
+                .single-product__statistic-category {
+                    &::before {
+                        content: "\e82e";
+                        color: $button-blue;
+                    }
+                }
+            }
+            &--favorites {
+                .single-product__statistic-category {
+                    &::before {
+                        content: "\e813";
+                        color: $bage-color;
+                    }
+                }
+            }
+            &--comments {
+                .single-product__statistic-category {
+                    &::before {
+                        content: "\e83f";
+                        color: $sky;
+                    }
+                }
+            }
+        }
+        &-category {
+            font-size: 16px;
+            line-height: 30px;
+            padding-left: 26px;
+            position: relative;
+            &:before {
+                font-family: "Linearicons-Free", sans-serif;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+        }
+        &-amount {
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 500;
+            color: $font-color3;
+        }
+        &-raiting {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 10px;
+            height: 57px;
+        }
+        &-votes {
+            font-size: 15px;
+            margin-left: 10px;
+            color: #7e7e7e;
+        }
+    }
+    &__information {
+        &-title {
+            font-size: 20px;
+            line-height: 30px;
+            padding: 5px 0 25px;
+            color: #000;
+            text-align: center;
+            border-bottom: 1px solid #ececec;
+        }
+        &-item {
+            display: flex;
+            font-size: 15px;
+            line-height: 36px;
+        }
+        &-section {
+            font-weight: 500;
+            color: $font-color3;
+            min-width: 135px;
+            
+        }
+        &-data {
+            a {
+                color: $button-blue;
+                &:after {
+                    content: ",";
+                }
+            }
+        }
+    }
+    &__author {
+        text-align: center;
+        &-title {
+            font-size: 20px;
+            line-height: 30px;
+            color: #000;
+            padding: 5px 0 15px;
+            border-bottom: 1px solid #ececec;
+            margin-bottom: 20px;
+        }
+        &-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 18px;
+        }
+        &-name {
+            font-size: 18px;
+            line-height: 30px;
+            color: #000;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        &-date {
+            font-size: 15px;
+            line-height: 30px;
+            color: #7e7e7e;
+            margin-bottom: 30px;
+        }
+        &-socials {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        &-links {
+            display: flex;
+            justify-content: space-between;
+            a {
+                width: 140px;
+                color: #fff;
+                background-color: $button-blue;
+                font-size: 15px;
+                line-height: 44px;
+                text-align: center;
+                border-radius: 22px;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: $bage-color;
+                }
+            }
         }
     }
 }

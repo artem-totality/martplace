@@ -553,6 +553,7 @@ body {
   color: #000;
   margin: 24px 0 8px;
   display: inline-block;
+  text-transform: capitalize;
 }
 
 .form-label--simple {
@@ -612,6 +613,14 @@ body {
   font-size: 15px;
   font-weight: 500;
   border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #7347c1;
 }
 
 .form-hint {
@@ -622,6 +631,10 @@ body {
 
 .form-hint a {
   color: #0674ec;
+}
+
+.compensate-for-scrollbar {
+  margin-right: 0 !important;
 }
 
 .header__top {
@@ -4357,16 +4370,19 @@ body {
 
 .login-box {
   max-width: 555px;
+  width: 100%;
   padding: 60px 0 55px;
   margin: 0 auto;
   border-radius: 4px;
   background-color: white;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
           box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  margin-bottom: 30px;
 }
 
 .login-box__top {
   text-align: center;
+  padding: 0 50px;
 }
 
 .login-box__title {
@@ -4382,12 +4398,20 @@ body {
   margin-bottom: 25px;
 }
 
+.login-box__description--recover {
+  text-align: left;
+}
+
 .login-box__form {
   border-top: 1px solid #ececec;
 }
 
 .login-box__form-btn {
   margin-top: 13px;
+}
+
+.login-box__form-btn--register, .login-box__form-btn--recover {
+  margin-top: 32px;
 }
 
 .login-box__form-hints {

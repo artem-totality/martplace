@@ -3088,13 +3088,16 @@
 
 .login-box {
     max-width: 555px;
+    width: 100%;
     padding: 60px 0 55px;
     margin: 0 auto;
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    margin-bottom: 30px;
     &__top {
         text-align: center;
+        padding: 0 50px;
     }
     &__title {
         font-size: 26px;
@@ -3106,11 +3109,19 @@
         font-size: 16px;
         line-height: 28px;
         margin-bottom: 25px;
+        &--recover {
+            text-align: left;
+        }
     }
     &__form {
         border-top: 1px solid #ececec;
         &-btn {
             margin-top: 13px;
+            &--register,
+            &--recover {
+                margin-top: 32px;
+            }
+
         } 
         &-hints {
             display: flex;

@@ -472,6 +472,7 @@ body {
     color: #000;
     margin: 24px 0 8px;
     display: inline-block;
+    text-transform: capitalize;
     &--simple {
         color: $font-color5;
         font-weight: 400;
@@ -505,6 +506,11 @@ body {
     font-size: 15px;
     font-weight: 500;
     border-radius: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+        background-color: $bage-color;
+    }
 }
 
 .form-hint {
@@ -519,3 +525,7 @@ body {
 
 
 //end form elements
+
+.compensate-for-scrollbar {
+    margin-right: 0 !important;
+}

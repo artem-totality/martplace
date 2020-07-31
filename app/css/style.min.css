@@ -634,36 +634,36 @@ body {
   position: relative;
 }
 
-.form-checkbox__override::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/icons/checkbox-dis.png);
-  left: 0;
-  top: 4px;
-}
-
-.form-checkbox__override::after {
-  content: "";
-  display: none;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/icons/checkbox-en.png);
-  left: 0;
-  top: 4px;
-}
-
 .form-checkbox__text {
   margin-left: 10px;
+  padding-left: 35px;
+  display: inline-block;
+  position: relative;
 }
 
-.form-checkbox:checked + .form-checkbox__override::before {
+.form-checkbox__text::before, .form-checkbox__text::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 4px;
+}
+
+.form-checkbox__text::before {
+  background-image: url(../images/icons/checkbox-dis.png);
+}
+
+.form-checkbox__text::after {
+  display: none;
+  background-image: url(../images/icons/checkbox-en.png);
+}
+
+.form-checkbox:checked + .form-checkbox__text::before {
   display: none;
 }
 
-.form-checkbox:checked + .form-checkbox__override::after {
+.form-checkbox:checked + .form-checkbox__text::after {
   display: block;
 }
 

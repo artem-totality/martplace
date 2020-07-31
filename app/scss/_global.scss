@@ -520,31 +520,32 @@ body {
         width: 20px;
         height: 20px;
         position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-image: url(../images/icons/checkbox-dis.png);
-            left: 0;
-            top: 4px;
-        }
-        &::after {
-            content: "";
-            display: none;
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-image: url(../images/icons/checkbox-en.png);
-            left: 0;
-            top: 4px;
-        }
+        
     }
     &__text {
         margin-left: 10px;
+        padding-left: 35px;
+        display: inline-block;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 4px;
+        } 
+        &::before {
+            background-image: url(../images/icons/checkbox-dis.png);
+        }
+        &::after {
+            display: none;
+            background-image: url(../images/icons/checkbox-en.png);
+        }
     }
     &:checked {
-        & + .form-checkbox__override {
+        & + .form-checkbox__text {
             &::before {
                 display: none;
             }

@@ -667,6 +667,50 @@ body {
   display: block;
 }
 
+.form-radio {
+  display: none;
+}
+
+.form-radio__override {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.form-radio__text {
+  margin-left: 10px;
+  padding-left: 35px;
+  display: inline-block;
+  position: relative;
+}
+
+.form-radio__text::before, .form-radio__text::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 4px;
+}
+
+.form-radio__text::before {
+  background-image: url(../images/icons/checkbox-dis.png);
+}
+
+.form-radio__text::after {
+  display: none;
+  background-image: url(../images/icons/checkbox-en.png);
+}
+
+.form-radio:checked + .form-radio__text::before {
+  display: none;
+}
+
+.form-radio:checked + .form-radio__text::after {
+  display: block;
+}
+
 .form-hint {
   font-size: 16px;
   line-height: 26px;

@@ -556,6 +556,49 @@ body {
     }
 }
 
+.form-radio {
+    display: none;
+    &__override {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        
+    }
+    &__text {
+        margin-left: 10px;
+        padding-left: 35px;
+        display: inline-block;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 4px;
+        } 
+        &::before {
+            background-image: url(../images/icons/checkbox-dis.png);
+        }
+        &::after {
+            display: none;
+            background-image: url(../images/icons/checkbox-en.png);
+        }
+    }
+    &:checked {
+        & + .form-radio__text {
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: block;
+            }
+        }
+    }
+}
+
 .form-hint {
     font-size: 16px;
     line-height: 26px;

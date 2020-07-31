@@ -3301,14 +3301,15 @@ body {
   color: #555555;
   font-family: "Linearicons-Free", sans-serif;
   position: relative;
+  cursor: default;
 }
 
 .pricing-plan__item-list li .pricing-plan__item-tip:hover::before, .pricing-plan__item-list li .pricing-plan__item-tip:hover::after {
-  opacity: 1;
+  display: block;
 }
 
 .pricing-plan__item-list li .pricing-plan__item-tip::before {
-  opacity: 0;
+  display: none;
   content: "quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats.";
   border-radius: 4px;
   overflow: hidden;
@@ -3326,7 +3327,7 @@ body {
 }
 
 .pricing-plan__item-list li .pricing-plan__item-tip::after {
-  opacity: 0;
+  display: none;
   content: "";
   width: 0;
   height: 0;

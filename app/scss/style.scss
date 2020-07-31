@@ -2242,12 +2242,13 @@
                     color: $font-color5;
                     font-family: $icon-font;
                     position: relative;
+                    cursor: default;
                     &:hover::before,
                     &:hover::after {
-                        opacity: 1;
+                        display: block;
                     }
                     &::before {
-                        opacity: 0;
+                        display: none;
                         content: "quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats.";
                         border-radius: 4px;
                         overflow: hidden;
@@ -2264,7 +2265,7 @@
                         top: -131px;
                     }
                     &::after {
-                        opacity: 0;
+                        display: none;
                         content: "";
                         width: 0;
                         height: 0;

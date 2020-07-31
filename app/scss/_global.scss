@@ -462,6 +462,60 @@ body {
     }
 }
 
-
 //end socials
+//start form elements
 
+.form-label {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #000;
+    margin: 24px 0 8px;
+    display: inline-block;
+    &--simple {
+        color: $font-color5;
+        font-weight: 400;
+    }    
+}
+
+.form-input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    outline: transparent;
+    font-size: 16px;
+    font-family: $main-font;
+    background-color: #f4f5f8;
+    padding: 0 20px;
+    &::placeholder {
+        font-size: 16px;
+        font-family: $main-font;
+        color: #898f96;
+    }
+}
+
+.form-button {
+    background-color: $button-blue;
+    outline: transparent;
+    border: none;
+    color: #fff;
+    width: 190px;
+    height: 50px;
+    font-family: $main-font;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.form-hint {
+    font-size: 16px;
+    line-height: 26px;
+    color: #898f96;
+    a {
+        color: $button-blue;
+    }
+}
+
+
+
+//end form elements

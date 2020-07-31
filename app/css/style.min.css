@@ -546,6 +546,84 @@ body {
   background-color: #ea4c89;
 }
 
+.form-label {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #000;
+  margin: 24px 0 8px;
+  display: inline-block;
+}
+
+.form-label--simple {
+  color: #555555;
+  font-weight: 400;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  height: 50px;
+  outline: transparent;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f4f5f8;
+  padding: 0 20px;
+}
+
+.form-input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #898f96;
+}
+
+.form-input::-moz-placeholder {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #898f96;
+}
+
+.form-input:-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #898f96;
+}
+
+.form-input::-ms-input-placeholder {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #898f96;
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  color: #898f96;
+}
+
+.form-button {
+  background-color: #0674ec;
+  outline: transparent;
+  border: none;
+  color: #fff;
+  width: 190px;
+  height: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.form-hint {
+  font-size: 16px;
+  line-height: 26px;
+  color: #898f96;
+}
+
+.form-hint a {
+  color: #0674ec;
+}
+
 .header__top {
   background-color: #eff1f5;
 }
@@ -4247,6 +4325,83 @@ body {
 .single-favorites__title {
   margin-bottom: 50px;
   text-align: center;
+}
+
+.login {
+  min-height: 800px;
+  padding: 75px 0;
+  background-color: #eff1f5;
+}
+
+.login .login__btn {
+  text-align: center;
+}
+
+.login .login__btn a {
+  text-align: center;
+  width: 190px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #0674ec;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.login .login__btn a:hover {
+  background-color: #7347c1;
+}
+
+.login-box {
+  max-width: 555px;
+  padding: 60px 0 55px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.login-box__top {
+  text-align: center;
+}
+
+.login-box__title {
+  font-size: 26px;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.login-box__description {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.login-box__form {
+  border-top: 1px solid #ececec;
+}
+
+.login-box__form-btn {
+  margin-top: 13px;
+}
+
+.login-box__form-hints {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+}
+
+.login-box__bottom {
+  padding: 0 50px;
 }
 
 @media (max-width: 1110px) {

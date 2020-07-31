@@ -3128,6 +3128,9 @@
             justify-content: space-between;
             margin-top: 35px;
         }
+        &-checkbox {
+            cursor: pointer;
+        }
     }
     &__bottom {
         padding: 0 50px;

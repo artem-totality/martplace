@@ -513,6 +513,48 @@ body {
     }
 }
 
+.form-checkbox {
+    display: none;
+    &__override {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/icons/checkbox-dis.png);
+            left: 0;
+            top: 4px;
+        }
+        &::after {
+            content: "";
+            display: none;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/icons/checkbox-en.png);
+            left: 0;
+            top: 4px;
+        }
+    }
+    &__text {
+        margin-left: 10px;
+    }
+    &:checked {
+        & + .form-checkbox__override {
+            &::before {
+                display: none;
+            }
+            &::after {
+                display: block;
+            }
+        }
+    }
+}
+
 .form-hint {
     font-size: 16px;
     line-height: 26px;
@@ -521,8 +563,6 @@ body {
         color: $button-blue;
     }
 }
-
-
 
 //end form elements
 

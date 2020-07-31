@@ -759,7 +759,7 @@
                     </a>
                 </div>
 
-                <div class="login-box" style="display: none;" id="login">
+                <div class="login-box" style="display: block;" id="login">
                     <div class="login-box__top">
                         <div class="login-box__title">
                             Welcome Back
@@ -782,10 +782,11 @@
                                         placeholder="Enter your password..." required>
                                 </div>
                                 <div class="form-group">
-                                    <inpup type="checkbox" class="form-checkbox">
-                                        <label for=""
-                                            class="form-label form-label--simple login-box__form-checkbox">Remember
-                                            me</label>
+                                        <label class="form-label form-label--simple login-box__form-checkbox">
+                                            <input type="checkbox" class="form-checkbox">
+                                            <span class="form-checkbox__override"></span>
+                                            <span class="form-checkbox__text">Remember me</span>
+                                        </label>
                                 </div>
                                 <button class="form-button login-box__form-btn">Login Now</button>
                                 <div class="login-box__form-hints">

@@ -623,6 +623,50 @@ body {
   background-color: #7347c1;
 }
 
+.form-checkbox {
+  display: none;
+}
+
+.form-checkbox__override {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.form-checkbox__override::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons/checkbox-dis.png);
+  left: 0;
+  top: 4px;
+}
+
+.form-checkbox__override::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons/checkbox-en.png);
+  left: 0;
+  top: 4px;
+}
+
+.form-checkbox__text {
+  margin-left: 10px;
+}
+
+.form-checkbox:checked + .form-checkbox__override::before {
+  display: none;
+}
+
+.form-checkbox:checked + .form-checkbox__override::after {
+  display: block;
+}
+
 .form-hint {
   font-size: 16px;
   line-height: 26px;
@@ -4422,6 +4466,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 35px;
+}
+
+.login-box__form-checkbox {
+  cursor: pointer;
 }
 
 .login-box__bottom {

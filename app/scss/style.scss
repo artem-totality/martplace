@@ -3139,10 +3139,128 @@
 }
 
 
-
-
 //end login-box
 //end login.html
+
+//start contact.html
+//start contact-baner
+
+.contact-baner {
+    background: linear-gradient(270deg, #0d3ef2 0%, #2d2fc7 46%, #4c1f9c 100%);
+        opacity: 0.9;
+    &__inner {
+        min-height: 280px;
+        padding: 50px 0;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 50px;
+        margin-bottom: 13px;
+    }
+    &__description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+} 
+
+//end contact-baner
+//start contact
+
+.contact {
+    background-color: $dark-bg;
+    &__inner {
+        text-align: center;
+        padding: 120px 0;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 360px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        padding: 43px 30px;
+        margin-bottom: 50px;
+        &-ico {
+            font-family: $icon-font;
+            font-size: 48px;
+            line-height: 62px;
+            color: $button-blue;
+            margin-bottom: 35px;
+        }
+        &-title {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 25px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 30px;
+            a {
+                display: block;
+            }
+        }
+    }
+    &__form {
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        padding: 60px 0;
+        &-title {
+            font-size: 24px;
+            color: #000;
+            border-bottom: 1px solid #ececec;
+        }
+        &-bottom {
+            padding: 40px 30px 0;
+            
+        }
+    }
+    &-input {
+        border: 1px solid #ececec;
+        max-width: 360px;
+        width: 100%;
+        height: 50px;
+        outline: transparent;
+        padding-left: 50px;
+        padding-right: 30px;
+        font-family: $main-font;
+        font-size: 16px;
+        margin: 0 15px 30px;
+        &::placeholder {
+            font-family: $main-font;
+            font-size: 16px;
+            color: #9e9e9e;
+        }
+        &--area {
+            max-width: 750px;
+            width: 100%;
+            height: 133px;
+            padding-top: 17px;
+        }
+    }
+    &-map {
+        min-height: 400px;
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+
+
+//end contact
+
+//end contact.html
 
 
 @import "media";

@@ -631,6 +631,19 @@
     .contact__form-group {
         max-width: 690px;
     }
+
+    //smooth open menu
+
+    .menu__item:hover {
+        .menu-2nd--expanded,
+        .menu-2nd {
+            display: none;
+        }
+    }
+    .menu-2nd--expanded .menu-2nd__category-list {
+        margin: 0 auto;
+    }
+    //smooth open menu
 }
 
 @media (max-width: 785px) {
@@ -1642,10 +1655,6 @@
             &-img img {
                 width: 290px;
             }
-            // &-top,
-            // &-bottom {
-            //     padding: 20px 15px;
-            // }
         }
         &__box {
             width: 290px;
@@ -1660,5 +1669,21 @@
 @media (min-width: 901px) {
     .menu__list {
         display: flex !important;
+    }
+
+    .menu-2nd {
+        display: none !important;
+    }
+    .menu-2nd--expanded {
+        display: none !important;
+    }
+
+    .menu__item:hover {
+        .menu-2nd {
+            display: block !important;
+        }
+        .menu-2nd--expanded {
+            display: flex !important;
+        }
     }
 }

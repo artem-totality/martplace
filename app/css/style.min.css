@@ -5323,6 +5323,13 @@ body {
   .contact__form-group {
     max-width: 690px;
   }
+  .menu__item:hover .menu-2nd--expanded,
+  .menu__item:hover .menu-2nd {
+    display: none;
+  }
+  .menu-2nd--expanded .menu-2nd__category-list {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 785px) {
@@ -6156,6 +6163,20 @@ body {
 
 @media (min-width: 901px) {
   .menu__list {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .menu-2nd {
+    display: none !important;
+  }
+  .menu-2nd--expanded {
+    display: none !important;
+  }
+  .menu__item:hover .menu-2nd {
+    display: block !important;
+  }
+  .menu__item:hover .menu-2nd--expanded {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;

@@ -81,6 +81,17 @@ $(function () {
         $('.menu__list').slideToggle();
     });
 
+    //smooth open menu
+
+    $('.menu__item').on('click', function(){
+      if(window.innerWidth < 901) {
+        $(this).children(":first").next().slideToggle();
+      }
+      
+    });
+
+    //smooth open menu
+
     $('.product-main__box-title').on('click', function(){
         $(this).toggleClass('product-main__box-title--closed');
         $(this).next().slideToggle();

@@ -50,6 +50,9 @@
                 }
             }
         }
+        &--small {
+            margin: 0 0 30px 30px;
+        }
     }
 
     .newest-product {
@@ -110,6 +113,10 @@
             margin: 0 8px 30px;
         }
     }
+
+    .product-main__items {
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 1110px) {
@@ -125,6 +132,19 @@
 
 
 @media (max-width: 995px) {
+    .selector-box {
+        &:first-child {
+            padding: 15px 0;
+            display: block;
+            margin-right: 25px;
+            .selector-box__link {
+                & + .selector-box__link {
+                margin: 10px 0 0;
+                }
+            }
+        }
+    }
+    
     .footer {
         &__top {
             padding-bottom: 90px;
@@ -137,6 +157,26 @@
             &--first {
                 width: 100%;
             }
+        }
+    }
+
+    .product-main {
+        &__bottom-inner {
+            display: block;
+        }
+        &__aside {
+            display: flex;
+            margin-bottom: 80px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__box {
+            & + & {
+                margin-top: 0;
+            }
+        }
+        &__content {
+            margin-left: 0;
         }
     }
 }
@@ -217,6 +257,55 @@
             margin: 0 0 30px;
         }
     }
+
+    .product-main {
+        &__top-inner {
+           display: block;
+           padding: 15px 0;
+        }
+        &__aside {
+            margin-bottom: 60px;
+        }
+        &__box {
+            width: 48%;
+            & + &.product-main__box--price-range {
+                margin-top: 30px;
+            }
+            &--price-range {
+                width: 100%;
+            }
+
+        }
+    }
+
+
+    .selector-box {
+        &__group {
+            padding: 15px 0;
+            &--select {
+                & + & {
+                    margin-left: 30px;
+                }
+            }
+            &--button {
+                padding: 1px 7px;
+            }
+        }
+        &:first-child {
+            display: flex;
+            margin-right: 0;
+            .selector-box__link {
+                & + .selector-box__link {
+                margin: 0 0 0 30px;
+                }
+            }
+        }
+    }
+
+    .pagination,
+    .pagination--left {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 785px) {
@@ -271,13 +360,18 @@
 
     .product__item {
         width: 570px;
+        &--small {
+            width: 262px;
+        }
     }
 
+    .product-search,
     .offer {
         padding: 70px 0 20px;
     }
 
 
+    .product-main__bottom-inner,
     .news,
     .feedback__inner,
     .reasons,
@@ -417,10 +511,36 @@
         &-info {
             padding: 30px 30px 25px;
         }
+        &--small {
+            width: 262px;
+        }
     }
 
     .feedback__item {
         padding: 25px 15px;
+    }
+
+    .selector-box {
+        flex-wrap: wrap;
+        &:last-child {
+            margin-left: -15px;
+        }
+        &__group {
+            margin-left: 15px;
+            & + & {
+                margin-left: 15px;
+            }
+            
+        }
+    }
+
+    .product-main {
+        &__box {
+            width: 100%;
+            & + & {
+                margin-top: 30px;
+            }
+        }
     }
 }
 
@@ -521,6 +641,14 @@
                 }
             }
         }
+        &--small {
+            width: 262px;
+            &-img {
+                min-width: 0;
+                min-height: 160px;
+                height: 160px; 
+            }
+        }
     }
 
     .newest-product__inner {
@@ -569,6 +697,40 @@
             }
         }
     }
+
+    .pagination,
+    .pagination--center,
+    .pagination--left {
+        display: block;
+        text-align: center;
+        position: relative;
+        margin-bottom: 30px;
+        .pagination__prev,
+        .pagination__next {
+            span, a {
+                position: absolute;
+                margin: 0 auto;
+                bottom: -38px;
+            }
+        }
+        .pagination__prev {
+            span, a {
+                left: 50%;
+                transform: translateX(-55px);
+            }
+        }
+        
+        .pagination__next {
+            span, a {
+                left: 50%;
+                transform: translateX(5px);
+            }
+        }
+
+        .pagination__list {
+            margin: 10px 0;
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -596,6 +758,14 @@
                 &-cart {
                     margin: 15px 0 0 10px;
                 }
+            }
+        }
+        &--small {
+            width: 262px;
+            &-img {
+                min-width: 0;
+                min-height: 160px;
+                height: 160px; 
             }
         }
     }

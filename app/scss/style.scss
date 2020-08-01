@@ -1755,6 +1755,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
     }
     &__bottom {
@@ -1876,8 +1877,8 @@
     }
     &__items {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        margin-left: -30px;
     }
 }
 
@@ -1889,10 +1890,12 @@
     width: 262px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     margin-bottom: 30px;
+    margin-left: 30px;
     .product__item {
         &-img {
             min-width: 0;
-            min-height: 160px; 
+            min-height: 160px;
+            height: 160px; 
         }
         &-info {
             padding: 15px 19px;

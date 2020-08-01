@@ -53,6 +53,41 @@
         &--small {
             margin: 0 0 30px 30px;
         }
+        &--small-list {
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 0 30px 30px;
+            .product__item {
+                &-img {
+                    min-width: 250px;
+                    min-height: 232px;
+                    height: 232px;
+                }
+                &-info {
+                    flex-wrap: wrap;
+                    padding: 15px;
+                }
+                &-top {
+                    width: 60%;
+                }
+                &-box {
+                    width: 40%;
+                }
+                &-bottom {
+                    width: 100%;
+                    border-top: 1px solid #ececec;
+                    border-left: none;
+                    margin-top: 15px;
+                    padding: 15px 0 0;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                }
+                &-cart {
+                    margin-left: 15px;
+                }
+            }
+        }
     }
 
     .newest-product {
@@ -125,6 +160,55 @@
         .menu-2nd__category {
             &-inner {
                 display: block;
+            }
+        }
+    }
+    .product__item {
+        &--small-list {
+            .product__item {
+                &-img {
+                    min-width: 340px;
+                    min-height: 311px;
+                    height: 311px;
+                }
+                &-title {
+                    margin: 0;
+                }
+                &-info {
+                    padding: 15px;
+                }
+                &-top {
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+                &-box {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    border-top: 1px solid #ececec;
+                    border-left: none;
+                    padding: 0 0 15px;
+                    margin-left: -15px;
+                }
+                &-bottom {
+                    margin: 0;
+                }
+                &-author,
+                &-likes,
+                &-comments,
+                &-star {
+                    // margin-top: 16px;
+                    // margin-left: 15px;
+                    margin: 15px 0 0 15px;
+                }
+                &-comments {
+                    font-size: 16px;
+                    display: block;
+                }
+                &-likes {
+                    margin-left: 15px;
+                }
             }
         }
     }
@@ -363,6 +447,28 @@
         &--small {
             width: 262px;
         }
+        &--small-list {
+            display: block;
+            width: 262px;
+            .product__item {
+                &-img {
+                    min-width: 262px;
+                    min-height: 239px;
+                    height: 239px;
+                }
+                &-author {
+                    width: 100%;
+                }
+                &-title,
+                &-description {
+                    margin-bottom: 15px;
+                }
+                &-likes,
+                &-comments {
+                    margin-left: 20px;
+                }
+            }
+        }
     }
 
     .product-search,
@@ -514,6 +620,16 @@
         &--small {
             width: 262px;
         }
+        &--small-list {
+            width: 262px;
+            .product__item {
+                &-img {
+                    min-width: 262px;
+                    min-height: 239px;
+                    height: 239px;
+                }
+            }
+        }
     }
 
     .feedback__item {
@@ -649,6 +765,16 @@
                 height: 160px; 
             }
         }
+        &--small-list {
+            width: 262px;
+            .product__item {
+                &-img {
+                    min-width: 262px;
+                    min-height: 239px;
+                    height: 239px;
+                }
+            }
+        }
     }
 
     .newest-product__inner {
@@ -766,6 +892,16 @@
                 min-width: 0;
                 min-height: 160px;
                 height: 160px; 
+            }
+        }
+        &--small-list {
+            width: 262px;
+            .product__item {
+                &-img {
+                    min-width: 262px;
+                    min-height: 239px;
+                    height: 239px;
+                }
             }
         }
     }

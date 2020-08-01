@@ -1949,10 +1949,12 @@
 .product__item--small-list {
     width: 100%;
     margin-bottom: 30px;
+    margin-left: 30px;
     .product__item {
         &-img {
             min-width: 230px;
             min-height: 210px;
+            height: 210px;
         }
         &-info {
             width: 100%;
@@ -1974,7 +1976,7 @@
         }
         &-description {
             margin-bottom: 0;
-            max-height: 74px;
+            max-height: 65px;
             overflow: hidden;
             flex: 1 0 auto;
         }

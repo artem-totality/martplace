@@ -5526,6 +5526,16 @@ body {
   .single-product__item-links a {
     margin: 15px 10px;
   }
+  .login-box {
+    padding: 30px 0;
+    width: 420px;
+  }
+  .login-box__top, .login-box__bottom {
+    padding: 0 30px;
+  }
+  .login-box__form-hints {
+    display: block;
+  }
 }
 
 @media (max-width: 450px) {
@@ -5757,6 +5767,12 @@ body {
   .page-404__img img {
     width: 345px;
   }
+  .login-box {
+    width: 345px;
+  }
+  .login-box__top, .login-box__bottom {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -5855,6 +5871,9 @@ body {
     margin: 15px 0;
   }
   .page-404__img img {
+    width: 290px;
+  }
+  .login-box {
     width: 290px;
   }
 }

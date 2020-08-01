@@ -916,6 +916,18 @@
             }
         }
     }
+
+    .login-box {
+        padding: 30px 0;
+        width: 420px;
+        &__top,
+        &__bottom {
+            padding: 0 30px;
+        }
+        &__form-hints {
+            display: block;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -1176,6 +1188,14 @@
     .page-404__img img {
         width: 345px;
     }
+
+    .login-box {
+        width: 345px;
+        &__top,
+        &__bottom {
+            padding: 0 15px;
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -1307,6 +1327,10 @@
     }
 
     .page-404__img img {
+        width: 290px;
+    }
+
+    .login-box {
         width: 290px;
     }
 }

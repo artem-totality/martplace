@@ -5305,6 +5305,7 @@ body {
   .offer {
     padding: 70px 0 20px;
   }
+  .page-404__inner,
   .single-favorites__inner,
   .product-main__bottom-inner,
   .news,
@@ -5753,6 +5754,9 @@ body {
   .favorites__top-inner .selector-box__info {
     margin-left: 15px;
   }
+  .page-404__img img {
+    width: 345px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -5849,6 +5853,9 @@ body {
   .single-product__author-links a {
     width: 100%;
     margin: 15px 0;
+  }
+  .page-404__img img {
+    width: 290px;
   }
 }
 

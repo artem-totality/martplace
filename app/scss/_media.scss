@@ -178,6 +178,16 @@
             min-height: 766px;
         }
     }
+
+    .pricing-plan {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__item {
+            margin: 0 15px 30px;
+        }
+    }
 }
 
 @media (max-width: 1110px) {
@@ -672,6 +682,7 @@
         padding: 70px 0 20px;
     }
 
+    .pricing-plan,
     .page-404__inner,
     .single-favorites__inner,
     .product-main__bottom-inner,
@@ -780,6 +791,10 @@
 
     .menu-style1--how-it-works {
         padding: 50px 0 20px;
+    }
+
+    .pricing-plan__item-list li .pricing-plan__item-tip {
+            display: none;
     }
 }
 
@@ -1262,6 +1277,14 @@
             }
         }
     }
+
+    .pricing-plan {
+        &__item {
+            margin: 0 0 30px;
+            padding: 0 15px 15px;
+            width: 345px;
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -1412,6 +1435,12 @@
             &-img img {
                 width: 290px;
             }
+        }
+    }
+
+    .pricing-plan {
+        &__item {
+            width: 290px;
         }
     }
 }

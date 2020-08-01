@@ -376,6 +376,17 @@
             }
         }
     }
+
+    .how-steps {
+        &__item {
+            &-info {
+                width: 427px;
+            }
+            &-img img {
+                width: 427px;
+            }
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -531,6 +542,23 @@
                 margin-left: 30px;
                 margin-bottom: 10px;
                 padding: 0;
+            }
+        }
+    }
+
+    .how-steps {
+        &__item {
+            padding: 70px;
+            &-inner {
+                display: block;
+                margin: 0 auto;
+                width: 458px;
+            }
+            &-info {
+                width: 458px;
+            }
+            &-img img {
+                width: 458px;
             }
         }
     }
@@ -745,6 +773,14 @@
     .favorites__top-inner:first-child .selector-box {
         min-width: 180px;
     }
+
+    .how__title {
+        padding-bottom: 0px;
+    }
+
+    .menu-style1--how-it-works {
+        padding: 50px 0 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -926,6 +962,21 @@
         }
         &__form-hints {
             display: block;
+        }
+    }
+
+    .how-steps {
+        &__item {
+            padding: 70px 0;
+            &-inner {
+                width: 420px;
+            }
+            &-info {
+                width: 420px;
+            }
+            &-img img {
+                width: 420px;
+            }
         }
     }
 }
@@ -1196,6 +1247,21 @@
             padding: 0 15px;
         }
     }
+
+    .how-steps {
+        &__item {
+            padding: 50px 0;
+            &-inner {
+                width: 345px;
+            }
+            &-info {
+                width: 345px;
+            }
+            &-img img {
+                width: 345px;
+            }
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -1332,6 +1398,21 @@
 
     .login-box {
         width: 290px;
+    }
+
+    .how-steps {
+        &__item {
+            padding: 50px 0;
+            &-inner {
+                width: 290px;
+            }
+            &-info {
+                width: 290px;
+            }
+            &-img img {
+                width: 290px;
+            }
+        }
     }
 }
 

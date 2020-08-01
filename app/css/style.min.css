@@ -5096,6 +5096,12 @@ body {
   .single-product__author-links a {
     margin: 0 8px;
   }
+  .how-steps__item-info {
+    width: 427px;
+  }
+  .how-steps__item-img img {
+    width: 427px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -5224,6 +5230,20 @@ body {
     margin-left: 30px;
     margin-bottom: 10px;
     padding: 0;
+  }
+  .how-steps__item {
+    padding: 70px;
+  }
+  .how-steps__item-inner {
+    display: block;
+    margin: 0 auto;
+    width: 458px;
+  }
+  .how-steps__item-info {
+    width: 458px;
+  }
+  .how-steps__item-img img {
+    width: 458px;
   }
 }
 
@@ -5390,6 +5410,12 @@ body {
   .favorites__top-inner:first-child .selector-box {
     min-width: 180px;
   }
+  .how__title {
+    padding-bottom: 0px;
+  }
+  .menu-style1--how-it-works {
+    padding: 50px 0 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -5535,6 +5561,18 @@ body {
   }
   .login-box__form-hints {
     display: block;
+  }
+  .how-steps__item {
+    padding: 70px 0;
+  }
+  .how-steps__item-inner {
+    width: 420px;
+  }
+  .how-steps__item-info {
+    width: 420px;
+  }
+  .how-steps__item-img img {
+    width: 420px;
   }
 }
 
@@ -5773,6 +5811,18 @@ body {
   .login-box__top, .login-box__bottom {
     padding: 0 15px;
   }
+  .how-steps__item {
+    padding: 50px 0;
+  }
+  .how-steps__item-inner {
+    width: 345px;
+  }
+  .how-steps__item-info {
+    width: 345px;
+  }
+  .how-steps__item-img img {
+    width: 345px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -5874,6 +5924,18 @@ body {
     width: 290px;
   }
   .login-box {
+    width: 290px;
+  }
+  .how-steps__item {
+    padding: 50px 0;
+  }
+  .how-steps__item-inner {
+    width: 290px;
+  }
+  .how-steps__item-info {
+    width: 290px;
+  }
+  .how-steps__item-img img {
     width: 290px;
   }
 }

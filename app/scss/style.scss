@@ -2742,6 +2742,10 @@
                     width: 100%;
                     font-size: 17px;
                     line-height: 70px;
+                    color: #000;
+                    span {
+                        font-weight: 500;
+                    }
                 }
                 &:hover,
                 &.active {
@@ -2925,7 +2929,9 @@
             font-weight: 500;
             color: $font-color3;
             min-width: 135px;
-            
+            &:after {
+                    content: ":";
+            }
         }
         &-data {
             a {

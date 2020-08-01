@@ -609,7 +609,42 @@ body {
 }
 
 //end form elements
+//adding dots for slider adaptation
+
+.slick-dots {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    width: 100%;
+}
+
+.slick-dots li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    position: static;
+    display: inline-block;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #b9b9b9;
+}
+
+.slick-dots li.slick-active button {
+    background-color: $bage-color;
+}
+
+//adding dots for slider adaptation
+//override fancy-box bug
 
 .compensate-for-scrollbar {
     margin-right: 0 !important;
 }
+
+//override fancy-box bug

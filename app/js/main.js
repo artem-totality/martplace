@@ -8,7 +8,17 @@ $(function () {
 
     $('.week-product__slider').slick({
         prevArrow: '<button class="slick-arrow slick-prev">&#xe875;</button>',
-        nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>'
+        nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>',
+        responsive: [
+            {
+              breakpoint: 1170,
+              settings: {
+                arrows: false,
+                fade: false,
+                dots: true
+              }
+            }
+          ]
     });
 
     $('.followers-feed__slider').slick({
@@ -16,14 +26,51 @@ $(function () {
         slidesToScroll: 3,
         variableWidth: true,
         prevArrow: '<button class="slick-arrow slick-prev">&#xe875;</button>',
-        nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>'
+        nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>',
+        responsive: [
+            {
+              breakpoint: 1170,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false,
+                variableWidth: false,
+                // fade: false,
+                dots: true
+              }
+            },
+            {
+                breakpoint: 920,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: false,
+                  variableWidth: false,
+                  // fade: false,
+                  dots: true
+                }
+              }
+          ]
     });
 
     $('.feedback__slider').slick({
         slidesToShow: 2,
         slidesToScroll: 2,
         prevArrow: '<button class="slick-arrow slick-prev">&#xe875;</button>',
-        nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>'
+        nextArrow: '<button class="slick-arrow slick-next">&#xe876;</button>',
+        responsive: [
+            {
+              breakpoint: 1170,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                variableWidth: false,
+                // fade: false,
+                dots: true
+              }
+            }
+          ]
     });
 
     $('.header__top-menu-btn').on('click', function(){

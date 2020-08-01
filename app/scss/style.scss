@@ -600,16 +600,17 @@
 // start promo
 
 .promo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $button-blue;
     background: linear-gradient(270deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
     opacity: 0.8;
-    min-height: 725px;
-    position: relative;
     &__inner {
+        min-height: 725px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
     &__title {
         color: $promo-text;
@@ -643,15 +644,16 @@
         position: relative;
     }
     &__form {
+        width: 100%;
         padding: 40px;
         background-color: #fff;
         border: none;
         border-radius: 6px;
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
         position: absolute;
-        bottom: -66px;
+        bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%,50%);
         &::before {
             content: "";
             position: absolute;
@@ -717,7 +719,6 @@
             font-weight: 400;
             color: #fff;
             background-color: $button-blue;
-            margin-left: 30px;
             outline: none;
             border: none;
             border-radius: 6px;
@@ -725,6 +726,8 @@
         }
         form {
             display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
     }
 }
@@ -735,33 +738,31 @@
 .offer {
     padding-top: 186px;
     padding-bottom: 120px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 360px;
+        text-align: center;
+        padding: 40px 34px;
+        &-img {
+            margin-bottom: 35px;
+        }
+        &-title {
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 25px;
+        }
+        &-description {
+            line-height: 30px;
+        }
+        &:hover {
+            box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        }
+    }
 }
-
-.offer__inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.offer__item {
-    max-width: 360px;
-    text-align: center;
-    padding: 40px 34px;
-    &-img {
-        margin-bottom: 35px;
-    }
-    &-title {
-        font-size: 24px;
-        color: #010101;
-        margin-bottom: 25pgulpx;
-    }
-    &-description {
-        line-height: 30px;
-    }
-    &:hover {
-        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
-    }
-}
-
 // end offer
 //start week product
 
@@ -818,6 +819,7 @@
     &-img {
         min-width: 555px;
         min-height: 450px;
+        height: 450px;
         background-repeat: no-repeat;
         display: block;
         background-position: center;
@@ -888,8 +890,10 @@
         }
     }
     &-description {
+        height: 120px;
         line-height: 30px;
         margin-bottom: 30px;
+        overflow: hidden;  
     }
     &-tags a {
         padding: 6px 16px;
@@ -984,19 +988,21 @@
 
 .product-box {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: -28px;
 }
 
 .product__item--vertical {
     display: block;
-    width: 361px;
+    max-width: 361px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     margin-bottom: 30px;
+    margin-left: 28px;
     .product__item {
         &-img {
-            min-width: 0;
-            min-height: 0;
+            min-width: 361px;
+            min-height: 230px;
             height: 230px;
         }
         &-info {
@@ -1088,6 +1094,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item {
         text-align: center;
@@ -1211,7 +1218,7 @@
         width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         min-height: 561px;
         background-position: center;
@@ -1360,6 +1367,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item {
         border-radius: 4px;
@@ -1377,7 +1385,6 @@
         &-info {
             padding: 25px;
             text-align: left;
-            height: 190px;
             border-bottom: 1px solid #ececec;
         }
         &-title {
@@ -1439,6 +1446,7 @@
 .support {
     &__inner {
         display: flex;
+        flex-wrap: wrap;
     }
     &__item {
         width: 50%;
@@ -1479,6 +1487,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     &__title {
         font-size: 36px;

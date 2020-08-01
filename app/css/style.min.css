@@ -4693,6 +4693,18 @@ body {
   padding: 40px 30px 0;
 }
 
+.contact__form-group {
+  max-width: 750px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 30px;
+}
+
 .contact-input {
   border: 1px solid #ececec;
   max-width: 360px;
@@ -4703,7 +4715,6 @@ body {
   padding-right: 30px;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  margin: 0 15px 30px;
 }
 
 .contact-input::-webkit-input-placeholder {
@@ -4739,8 +4750,11 @@ body {
 .contact-input--area {
   max-width: 750px;
   width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   height: 133px;
   padding-top: 17px;
+  resize: none;
 }
 
 .contact-map {
@@ -4924,6 +4938,16 @@ body {
             justify-content: center;
   }
   .pricing-plan__item {
+    margin: 0 15px 30px;
+  }
+  .contact__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact__item {
     margin: 0 15px 30px;
   }
 }
@@ -5255,6 +5279,15 @@ body {
   .how-steps__item-img img {
     width: 458px;
   }
+  .contact-input {
+    max-width: 330px;
+  }
+  .contact-input--area {
+    max-width: 690px;
+  }
+  .contact__form-group {
+    max-width: 690px;
+  }
 }
 
 @media (max-width: 785px) {
@@ -5291,6 +5324,22 @@ body {
   }
   .single-product .feature-box__img {
     min-height: 910px;
+  }
+  .feedback__description {
+    margin-bottom: 40px;
+  }
+  .contact__form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 130px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-input {
+    max-width: 690px;
   }
 }
 
@@ -5335,6 +5384,7 @@ body {
   .offer {
     padding: 70px 0 20px;
   }
+  .contact__inner,
   .pricing-plan,
   .page-404__inner,
   .single-favorites__inner,
@@ -5429,6 +5479,9 @@ body {
   }
   .pricing-plan__item-list li .pricing-plan__item-tip {
     display: none;
+  }
+  .contact__item {
+    margin: 0 0 30px;
   }
 }
 
@@ -5587,6 +5640,10 @@ body {
   }
   .how-steps__item-img img {
     width: 420px;
+  }
+  .contact-input {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -5842,6 +5899,13 @@ body {
     padding: 0 15px 15px;
     width: 345px;
   }
+  .contact__item {
+    width: 345px;
+    padding: 30px 15px;
+  }
+  .contact__form-bottom {
+    padding: 40px 15px 0;
+  }
 }
 
 @media (max-width: 375px) {
@@ -5958,6 +6022,9 @@ body {
     width: 290px;
   }
   .pricing-plan__item {
+    width: 290px;
+  }
+  .contact__item {
     width: 290px;
   }
 }

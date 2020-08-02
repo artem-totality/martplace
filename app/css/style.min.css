@@ -2094,6 +2094,10 @@ body {
   background-color: #eff1f5;
 }
 
+.followers-feed__slider .product__item--vertical {
+  margin-left: 0;
+}
+
 .followers-feed__slider .slick-slide {
   width: 387px;
 }

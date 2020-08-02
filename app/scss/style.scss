@@ -1055,6 +1055,9 @@
     padding: 120px 0;
     background-color: $dark-bg;
     &__slider {
+        .product__item--vertical {
+            margin-left: 0;
+        }
         .slick-slide {
             width: 387px;
         }
